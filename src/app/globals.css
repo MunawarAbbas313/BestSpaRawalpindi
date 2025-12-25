@@ -1,0 +1,143 @@
+@import "tailwindcss";
+
+@theme {
+  --font-poppins: 'Poppins', sans-serif;
+  --font-playfair: 'Playfair Display', serif;
+}
+
+:root {
+  /* Romantic Theme Variables */
+
+  /* Gradient Start */
+  --background: 255 240 245;
+
+  /* Text */
+  --foreground: 88 28 55;
+  /* Deep Burgundy */
+
+  /* Primary Pink */
+  --primary: 219 39 119;
+  /* Pink-600 */
+  --primary-foreground: 255 255 255;
+
+  --muted: 252 231 243;
+  --muted-foreground: 157 23 77;
+
+  /* Semi-transparent White for Cards -> Glassmorphism Base */
+  --card: 255 255 255;
+  --card-foreground: 88 28 55;
+
+  --border: 249 168 212;
+  /* Pink-300 */
+
+  --secondary: 253 226 237;
+  --secondary-foreground: 131 24 67;
+
+  --input: 244 114 182;
+  --ring: 236 72 153;
+}
+
+/* Base styles */
+body {
+  /* Romantic Background Mix */
+  background-color: rgb(var(--background));
+  background-image:
+    radial-gradient(circle at 0% 0%, rgba(254, 226, 226, 0.4) 0%, transparent 50%),
+    radial-gradient(circle at 100% 100%, rgba(249, 168, 212, 0.4) 0%, transparent 50%),
+    linear-gradient(120deg, #fff0f5 0%, #fff 40%, #ffe4e6 100%);
+  background-attachment: fixed;
+  background-size: cover;
+
+  color: rgb(var(--foreground));
+  font-family: var(--font-poppins);
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-playfair);
+  color: #881337;
+  /* Rose-900 */
+}
+
+/* Utilities */
+.bg-background {
+  background-color: transparent;
+}
+
+.text-foreground {
+  color: rgb(var(--foreground));
+}
+
+.bg-primary {
+  background-color: rgb(var(--primary));
+}
+
+.text-primary {
+  color: rgb(var(--primary));
+}
+
+.text-primary-foreground {
+  color: rgb(var(--primary-foreground));
+}
+
+.bg-muted {
+  background-color: rgb(var(--muted));
+}
+
+.text-muted-foreground {
+  color: rgb(var(--muted-foreground));
+}
+
+/* Card - Glass Effect Default */
+.bg-card {
+  background-color: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+}
+
+.text-card-foreground {
+  color: rgb(var(--card-foreground));
+}
+
+.border-border {
+  border-color: rgb(var(--border));
+}
+
+.border-input {
+  border-color: rgb(var(--input));
+}
+
+.bg-secondary {
+  background-color: rgb(var(--secondary));
+}
+
+.text-secondary-foreground {
+  color: rgb(var(--secondary-foreground));
+}
+
+/* Animations */
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 60s linear infinite;
+}
+
+.animate-pulse-slow {
+  animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.animate-spin-slow {
+  animation: spin 3s linear infinite;
+}
