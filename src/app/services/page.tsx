@@ -1,5 +1,6 @@
 import { buttonVariants } from "@/components/ui/button";
 import Link from "next/link";
+import Image from "next/image";
 import { Metadata } from "next";
 import { FAQSection } from "@/components/ui/accordion";
 import { MapSection } from "@/components/shared/MapSection";
@@ -24,9 +25,9 @@ const services = [
     price: "PKR 5,500",
     duration: "60 / 90 Min",
     description:
-      "A complete head-to-toe restorative massage using warm organic botanical oils. Systematically releases muscle tension from the neck, shoulders, back, hips, and legs.",
-    benefits: "Boosts blood circulation, lowers cortisol, promotes deep delta-wave sleep",
-    image: "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=2070&auto=format&fit=crop",
+      "A complete restorative treatment combining rhythmic Swedish effleurage, warming aromatherapy balms, and continuous muscle relaxation from shoulders to feet.",
+    benefits: "Reduces whole-body cortisol, alleviates muscle tension, improves deep sleep quality",
+    image: "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=600&q=75",
     href: "/full-body-massage",
   },
   {
@@ -37,7 +38,7 @@ const services = [
     description:
       "Concentrated pressure applied across deep fascial layers and chronic trigger points. Highly effective for persistent lower back pain, stiff neck, and post-workout soreness.",
     benefits: "Dismantles myofascial knots, breaks scar tissue, restores joint mobility",
-    image: "https://images.unsplash.com/photo-1519823551278-64ac92734fb1?q=80&w=1974&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1519823551278-64ac92734fb1?auto=format&fit=crop&w=600&q=75",
     href: "/services#deep-tissue",
   },
   {
@@ -48,7 +49,7 @@ const services = [
     description:
       "Dry, oil-free bodywork incorporating assisted yoga stretching, joint mobilizations, and rhythmic sen line acupressure. Clients remain comfortably clothed in loose attire.",
     benefits: "Dramatically improves spinal flexibility, posture, and natural energy flow",
-    image: "https://images.unsplash.com/photo-1591343395082-e120087004b4?q=80&w=2071&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1591343395082-e120087004b4?auto=format&fit=crop&w=600&q=75",
     href: "/services#thai",
   },
   {
@@ -59,7 +60,7 @@ const services = [
     description:
       "The classic European wellness standard. Uses long, flowing gliding strokes (effleurage) and gentle kneading to induce profound mental and physical calm.",
     benefits: "Relieves everyday anxiety, soothes fatigued nervous system, enhances lymph flow",
-    image: "https://images.unsplash.com/photo-1600334129128-685c5582fd35?q=80&w=2070&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1600334129128-685c5582fd35?auto=format&fit=crop&w=600&q=75",
     href: "/services#swedish",
   },
   {
@@ -70,7 +71,7 @@ const services = [
     description:
       "Combines therapeutic Swedish massage with pure steam-distilled essential oils including French Lavender, Eucalyptus, and Sweet Orange chosen for your mood.",
     benefits: "Alleviates mental stress, clears respiratory pathways, deeply nourishes skin",
-    image: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=2070&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=600&q=75",
     href: "/services#aromatherapy",
   },
   {
@@ -81,7 +82,7 @@ const services = [
     description:
       "Smooth volcanic basalt stones are heated in water and strategically placed along energetic meridians while warm stones are used to massage tense muscles.",
     benefits: "Penetrates deep into tight fascia without painful pressure; melts stress",
-    image: "https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=2070&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=600&q=75",
     href: "/services#hot-stone",
   },
   {
@@ -92,7 +93,7 @@ const services = [
     description:
       "Targeted acupressure applied to reflex zones on the feet and lower legs corresponding to key internal organs and metabolic systems.",
     benefits: "Alleviates foot fatigue, improves blood circulation, supports organ vitality",
-    image: "https://images.unsplash.com/photo-1519415387722-a1c3bbef716c?q=80&w=2070&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1519415387722-a1c3bbef716c?auto=format&fit=crop&w=600&q=75",
     href: "/services#reflexology",
   },
   {
@@ -103,7 +104,7 @@ const services = [
     description:
       "Share an unforgettable relaxing experience with your partner in our private, candlelit double suite. Includes two Swedish or Aromatherapy massages.",
     benefits: "Synchronized relaxation, private suite, complimentary organic herbal tea",
-    image: "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=2070&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=600&q=75",
     href: "/services#couples",
   },
 ];
@@ -208,13 +209,15 @@ export default function ServicesPage() {
                 className="group flex flex-col sm:flex-row gap-6 bg-card p-6 md:p-8 rounded-3xl border border-border hover:shadow-lg transition-all duration-300"
               >
                 <div className="w-full sm:w-44 h-48 sm:h-auto shrink-0 overflow-hidden rounded-2xl relative">
-                  <img
+                  <Image
                     src={service.image}
                     alt={`${service.name} Rawalpindi Bahria Town`}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    fill
+                    sizes="(max-width: 640px) 100vw, 176px"
+                    className="object-cover transition-transform duration-500 group-hover:scale-105"
                     loading="lazy"
                   />
-                  <div className="absolute top-2 left-2 bg-background/90 backdrop-blur-md px-2.5 py-1 rounded-full text-[11px] font-bold text-foreground border border-border">
+                  <div className="absolute top-2 left-2 bg-background/90 backdrop-blur-md px-2.5 py-1 rounded-full text-[11px] font-bold text-foreground border border-border z-10">
                     {service.duration}
                   </div>
                 </div>

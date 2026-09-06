@@ -41,9 +41,10 @@ export function CTASection({
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-2">
           <Link
             href="/contact"
+            aria-label="Book your appointment at Best Spa Rawalpindi"
             className={cn(
               buttonVariants({ variant: "primary", size: "lg" }),
-              "bg-emerald-600 hover:bg-emerald-700 text-white font-bold h-14 px-8 text-base rounded-full shadow-xl gap-2 w-full sm:w-auto"
+              "bg-emerald-700 hover:bg-emerald-800 text-white font-bold h-14 px-8 text-base rounded-full shadow-xl gap-2 w-full sm:w-auto"
             )}
           >
             <Calendar className="h-5 w-5" /> Book Your Appointment
@@ -51,9 +52,10 @@ export function CTASection({
 
           <a
             href="tel:+923700802980"
+            aria-label="Call Best Spa Rawalpindi at 0370 0802980"
             className={cn(
               buttonVariants({ variant: "outline", size: "lg" }),
-              "bg-white/10 border-white/30 text-white hover:bg-white/20 font-bold h-14 px-8 text-base rounded-full backdrop-blur-md gap-2 w-full sm:w-auto"
+              "bg-black/30 border-white/40 text-white hover:bg-black/50 font-bold h-14 px-8 text-base rounded-full backdrop-blur-md gap-2 w-full sm:w-auto"
             )}
           >
             <Phone className="h-5 w-5 text-emerald-400" /> Call Now: 0370 0802980
@@ -63,12 +65,13 @@ export function CTASection({
             href={whatsappUrl}
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Message Best Spa Rawalpindi on WhatsApp for reservations"
             className={cn(
               buttonVariants({ variant: "outline", size: "lg" }),
-              "bg-emerald-950/60 border-emerald-500/50 text-emerald-200 hover:bg-emerald-900/80 font-bold h-14 px-7 text-base rounded-full backdrop-blur-md gap-2 w-full sm:w-auto"
+              "bg-emerald-950/80 border-emerald-400/60 text-emerald-100 hover:bg-emerald-900 font-bold h-14 px-7 text-base rounded-full backdrop-blur-md gap-2 w-full sm:w-auto"
             )}
           >
-            <MessageCircle className="h-5 w-5 text-emerald-400" /> WhatsApp Us
+            <MessageCircle className="h-5 w-5 text-emerald-300" /> Message on WhatsApp
           </a>
         </div>
 

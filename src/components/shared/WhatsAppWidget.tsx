@@ -45,7 +45,8 @@ export function WhatsAppWidget() {
                                 href={whatsappUrl}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="flex items-center justify-center gap-2 w-full bg-emerald-600 hover:bg-emerald-700 text-white font-medium py-2 px-4 rounded-full transition-colors"
+                                aria-label="Start WhatsApp chat with Best Spa Rawalpindi customer support"
+                                className="flex items-center justify-center gap-2 w-full bg-emerald-700 hover:bg-emerald-800 text-white font-medium py-2 px-4 rounded-full transition-colors"
                             >
                                 <Send className="h-4 w-4" /> Start Chat
                             </a>
@@ -56,7 +57,8 @@ export function WhatsAppWidget() {
 
             <button
                 onClick={() => setIsOpen(!isOpen)}
-                className="h-14 w-14 bg-emerald-500 hover:bg-emerald-600 text-white rounded-full shadow-lg flex items-center justify-center transition-transform hover:scale-110 active:scale-95"
+                aria-label={isOpen ? "Close WhatsApp support chat" : "Open WhatsApp support chat with Best Spa Rawalpindi"}
+                className="h-14 w-14 bg-emerald-600 hover:bg-emerald-700 text-white rounded-full shadow-lg flex items-center justify-center transition-transform hover:scale-110 active:scale-95"
             >
                 {isOpen ? <X className="h-6 w-6" /> : <MessageCircle className="h-7 w-7" />}
             </button>

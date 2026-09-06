@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { ArrowRight, Sparkles, ShieldCheck, Check } from "lucide-react";
@@ -59,42 +60,42 @@ const featuredServices = [
     title: "Full Body Massage",
     desc: "Complete head-to-toe relaxation releasing chronic stress and fatigue with warm organic oils.",
     href: "/full-body-massage",
-    image: "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=2070&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=720&q=75",
     duration: "60 / 90 Min",
   },
   {
     title: "Deep Tissue Therapy",
     desc: "Intense, focused pressure targeting deeper muscle layers and chronic myofascial adhesions.",
     href: "/services#deep-tissue",
-    image: "https://images.unsplash.com/photo-1519823551278-64ac92734fb1?q=80&w=1974&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1519823551278-64ac92734fb1?auto=format&fit=crop&w=720&q=75",
     duration: "60 Min",
   },
   {
     title: "Traditional Thai Massage",
     desc: "Energizing assisted yoga stretches and acupressure performed without oils for enhanced flexibility.",
     href: "/services#thai",
-    image: "https://images.unsplash.com/photo-1591343395082-e120087004b4?q=80&w=2071&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1591343395082-e120087004b4?auto=format&fit=crop&w=720&q=75",
     duration: "60 / 90 Min",
   },
   {
     title: "Swedish Relaxation",
     desc: "Gentle rhythmic European strokes that improve blood circulation and dissolve daily mental tension.",
     href: "/services#swedish",
-    image: "https://images.unsplash.com/photo-1600334129128-685c5582fd35?q=80&w=2070&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1600334129128-685c5582fd35?auto=format&fit=crop&w=720&q=75",
     duration: "60 Min",
   },
   {
     title: "Therapeutic Body Massage",
     desc: "Targeted posture and muscle pain management tailored to your specific physical tension points.",
     href: "/body-massage",
-    image: "https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=2070&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=720&q=75",
     duration: "60 Min",
   },
   {
     title: "Couples Wellness Retreat",
     desc: "Relax side-by-side with your partner in our candlelit double suite with custom aromatherapies.",
     href: "/services#couples",
-    image: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=2070&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=720&q=75",
     duration: "60 / 90 Min",
   },
 ];
@@ -191,10 +192,12 @@ export default function Home() {
               >
                 <div className="h-60 overflow-hidden relative">
                   <div className="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition-colors z-10" />
-                  <img
+                  <Image
                     src={service.image}
                     alt={`${service.title} in Bahria Town Rawalpindi`}
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    className="object-cover transition-transform duration-700 group-hover:scale-105"
                     loading="lazy"
                   />
                   <div className="absolute bottom-3 left-3 z-20 bg-background/90 backdrop-blur-md px-3 py-1 rounded-full text-xs font-semibold text-foreground border border-border">
@@ -215,13 +218,15 @@ export default function Home() {
                   <div className="pt-2 flex items-center justify-between border-t border-border/50 text-xs">
                     <Link
                       href={service.href}
+                      aria-label={`Explore details for ${service.title} in Bahria Town Rawalpindi`}
                       className="text-primary font-semibold hover:underline inline-flex items-center gap-1"
                     >
-                      Learn More <ArrowRight className="h-3.5 w-3.5" />
+                      <span>Explore {service.title}</span> <ArrowRight className="h-3.5 w-3.5" />
                     </Link>
                     <Link
                       href="/contact"
-                      className="px-3 py-1.5 rounded-full bg-primary/10 hover:bg-primary text-primary hover:text-primary-foreground font-semibold transition-colors"
+                      aria-label={`Book an appointment for ${service.title}`}
+                      className="px-3.5 py-1.5 rounded-full bg-emerald-700 hover:bg-emerald-800 text-white font-semibold transition-colors shadow-xs"
                     >
                       Book Session
                     </Link>

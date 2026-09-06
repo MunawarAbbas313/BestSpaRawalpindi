@@ -53,11 +53,12 @@ export function Navbar() {
               href="https://wa.me/923700802980?text=Hi!+I+would+like+to+book+an+appointment+at+Best+Spa+Rawalpindi."
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-3 py-0.5 rounded-full text-[11px] transition-all shadow-sm active:scale-95"
+              aria-label="Contact Best Spa Rawalpindi on WhatsApp at 0370 0802980"
+              className="inline-flex items-center gap-1.5 bg-emerald-700 hover:bg-emerald-800 text-white font-bold px-3.5 py-1 rounded-full text-xs transition-all shadow-sm active:scale-95"
             >
-              <MessageCircle className="h-3 w-3" /> WhatsApp: 0370 0802980
+              <MessageCircle className="h-3.5 w-3.5 text-emerald-200" /> WhatsApp: 0370 0802980
             </a>
-            <span className="hidden sm:inline text-stone-400">• Bahria Phase 7 (Near Nando&apos;s)</span>
+            <span className="hidden sm:inline text-stone-300 font-medium">• Bahria Phase 7 (Near Nando&apos;s)</span>
           </div>
         </div>
       </div>

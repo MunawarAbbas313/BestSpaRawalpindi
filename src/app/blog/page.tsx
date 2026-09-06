@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Metadata } from "next";
 import { SEOKeywords } from "@/components/shared/SEOKeywords";
 import { CTASection } from "@/components/shared/CTASection";
@@ -27,20 +28,20 @@ export default function BlogPage() {
   };
 
   return (
-    <div className="bg-background min-h-screen pt-12">
+    <div className="min-h-screen py-12 md:py-20 bg-background text-foreground">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(blogSchema) }}
       />
-
-      <div className="container mx-auto px-4 md:px-6 mb-20">
+      <div className="container mx-auto px-4 md:px-6">
         {/* Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
-          <span className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-primary bg-primary/10 px-3.5 py-1 rounded-full">
-            <Sparkles className="h-3.5 w-3.5" /> Wellness Journal & Guides
-          </span>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-playfair text-foreground">
-            Massage, Health & Self-Care Guides
+        <div className="max-w-3xl mx-auto text-center space-y-4 mb-16">
+          <div className="inline-flex items-center gap-2 py-1 px-3.5 rounded-full bg-primary/10 text-primary text-xs font-semibold uppercase tracking-wider">
+            <BookOpen className="h-3.5 w-3.5" />
+            <span>Wellness Journal</span>
+          </div>
+          <h1 className="text-4xl md:text-5xl font-bold font-playfair tracking-tight">
+            Massage & Health Articles
           </h1>
           <p className="text-muted-foreground text-base md:text-lg leading-relaxed">
             Written by our certified wellness specialists at Best Spa Rawalpindi. Practical insights into bodywork, stress relief, and restorative living in the Twin Cities.
@@ -52,12 +53,15 @@ export default function BlogPage() {
           <div className="mb-16">
             <div className="bg-card rounded-3xl overflow-hidden border border-border shadow-md flex flex-col lg:flex-row group">
               <div className="lg:w-1/2 min-h-[320px] relative overflow-hidden bg-muted">
-                <img
-                  src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=2070&auto=format&fit=crop"
+                <Image
+                  src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=900&q=75"
                   alt={featuredPost.title}
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                  className="object-cover transition-transform duration-700 group-hover:scale-105"
+                  priority
                 />
-                <div className="absolute top-4 left-4 bg-primary text-primary-foreground text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+                <div className="absolute top-4 left-4 bg-emerald-700 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider z-10">
                   Featured Article
                 </div>
               </div>

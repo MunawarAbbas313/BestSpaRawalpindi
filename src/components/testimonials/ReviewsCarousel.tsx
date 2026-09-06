@@ -63,8 +63,8 @@ export function ReviewsCarousel() {
                     <h2 className="text-4xl md:text-5xl font-bold font-playfair text-rose-900 mb-4">
                         Voices of Relaxation
                     </h2>
-                    <p className="text-lg text-rose-700/80 max-w-2xl mx-auto mb-8">
-                        Discover why locals call us the <span className="font-bold text-rose-600">Best Spa in Rawalpindi</span>.
+                    <p className="text-lg text-rose-800 max-w-2xl mx-auto mb-8 font-normal">
+                        Discover why locals call us the <span className="font-bold text-rose-900 underline decoration-rose-400">Best Spa in Rawalpindi</span>.
                         Real stories, real relief.
                     </p>
 
@@ -201,23 +201,23 @@ export function ReviewsCarousel() {
                                         />
                                     ))}
                                 </div>
-                                <div className="bg-rose-100 text-rose-600 text-xs px-2 py-1 rounded-full font-bold uppercase tracking-wider">
+                                <div className="bg-rose-100 text-rose-900 text-xs px-2.5 py-1 rounded-full font-bold uppercase tracking-wider border border-rose-200">
                                     {review.service}
                                 </div>
                             </div>
 
-                            <p className="text-rose-950/80 italic text-lg leading-relaxed mb-6 font-medium line-clamp-4">
+                            <p className="text-rose-950/90 italic text-lg leading-relaxed mb-6 font-medium line-clamp-4">
                                 &quot;{review.text}&quot;
                             </p>
 
                             <div className="flex items-center gap-4 border-t border-rose-100/50 pt-4">
-                                <div className="h-12 w-12 rounded-full bg-gradient-to-br from-rose-400 to-pink-600 flex items-center justify-center text-white font-bold text-lg shadow-inner">
+                                <div className="h-12 w-12 rounded-full bg-gradient-to-br from-rose-500 to-pink-700 flex items-center justify-center text-white font-bold text-lg shadow-inner">
                                     {review.name.charAt(0)}
                                 </div>
                                 <div>
                                     <p className="font-bold text-rose-950 text-base">{review.name}</p>
-                                    <div className="flex items-center gap-1 text-xs text-rose-600 font-medium">
-                                        <span className="opacity-70">Verified Customer</span> • {review.location}
+                                    <div className="flex items-center gap-1 text-xs text-rose-800 font-semibold">
+                                        <span className="opacity-90">Verified Customer</span> • {review.location}
                                     </div>
                                 </div>
                             </div>

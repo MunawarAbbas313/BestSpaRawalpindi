@@ -16,7 +16,8 @@ export function MobileStickyCTA() {
       <div className="grid grid-cols-3 gap-2">
         <a
           href="tel:+923700802980"
-          className="flex flex-col items-center justify-center py-2 px-1 rounded-xl bg-primary text-primary-foreground font-semibold text-xs transition-transform active:scale-95 shadow-sm"
+          aria-label="Call Best Spa Rawalpindi reception now at 0370 0802980"
+          className="flex flex-col items-center justify-center py-2 px-1 rounded-xl bg-emerald-800 text-white font-semibold text-xs transition-transform active:scale-95 shadow-sm"
         >
           <Phone className="h-4 w-4 mb-0.5" />
           <span>Call Now</span>
@@ -26,7 +27,8 @@ export function MobileStickyCTA() {
           href={whatsappUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex flex-col items-center justify-center py-2 px-1 rounded-xl bg-emerald-600 text-white font-semibold text-xs transition-transform active:scale-95 shadow-sm hover:bg-emerald-700"
+          aria-label="Chat on WhatsApp with Best Spa Rawalpindi support"
+          className="flex flex-col items-center justify-center py-2 px-1 rounded-xl bg-emerald-700 text-white font-semibold text-xs transition-transform active:scale-95 shadow-sm hover:bg-emerald-800"
         >
           <MessageCircle className="h-4 w-4 mb-0.5" />
           <span>WhatsApp</span>
@@ -34,6 +36,7 @@ export function MobileStickyCTA() {
 
         <Link
           href="/contact"
+          aria-label="Reserve your massage appointment time slot"
           className="flex flex-col items-center justify-center py-2 px-1 rounded-xl bg-stone-900 text-white dark:bg-stone-100 dark:text-stone-900 font-semibold text-xs transition-transform active:scale-95 shadow-sm"
         >
           <Calendar className="h-4 w-4 mb-0.5" />

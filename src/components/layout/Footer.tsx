@@ -32,15 +32,15 @@ export function Footer() {
                 href="https://wa.me/923700802980"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="WhatsApp"
-                className="h-9 w-9 rounded-full bg-stone-900 border border-stone-800 flex items-center justify-center text-stone-400 hover:text-emerald-400 hover:border-emerald-500/50 transition-colors"
+                aria-label="Chat on WhatsApp with Best Spa Rawalpindi"
+                className="h-9 w-9 rounded-full bg-stone-900 border border-stone-800 flex items-center justify-center text-stone-300 hover:text-emerald-400 hover:border-emerald-500/50 transition-colors"
               >
                 <MessageCircle className="h-4 w-4" />
               </a>
               <a
                 href="tel:+923700802980"
-                aria-label="Call Us"
-                className="h-9 w-9 rounded-full bg-stone-900 border border-stone-800 flex items-center justify-center text-stone-400 hover:text-emerald-400 hover:border-emerald-500/50 transition-colors"
+                aria-label="Call Best Spa Rawalpindi reception at 0370 0802980"
+                className="h-9 w-9 rounded-full bg-stone-900 border border-stone-800 flex items-center justify-center text-stone-300 hover:text-emerald-400 hover:border-emerald-500/50 transition-colors"
               >
                 <Phone className="h-4 w-4" />
               </a>
@@ -48,8 +48,8 @@ export function Footer() {
                 href="https://instagram.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Instagram"
-                className="h-9 w-9 rounded-full bg-stone-900 border border-stone-800 flex items-center justify-center text-stone-400 hover:text-rose-400 hover:border-rose-500/50 transition-colors"
+                aria-label="Follow Best Spa Rawalpindi on Instagram"
+                className="h-9 w-9 rounded-full bg-stone-900 border border-stone-800 flex items-center justify-center text-stone-300 hover:text-rose-400 hover:border-rose-500/50 transition-colors"
               >
                 <Instagram className="h-4 w-4" />
               </a>
@@ -57,8 +57,8 @@ export function Footer() {
                 href="https://facebook.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Facebook"
-                className="h-9 w-9 rounded-full bg-stone-900 border border-stone-800 flex items-center justify-center text-stone-400 hover:text-blue-400 hover:border-blue-500/50 transition-colors"
+                aria-label="Follow Best Spa Rawalpindi on Facebook"
+                className="h-9 w-9 rounded-full bg-stone-900 border border-stone-800 flex items-center justify-center text-stone-300 hover:text-blue-400 hover:border-blue-500/50 transition-colors"
               >
                 <Facebook className="h-4 w-4" />
               </a>
@@ -68,81 +68,81 @@ export function Footer() {
           {/* Quick & Trust Links */}
           <div className="space-y-4">
             <h3 className="text-white font-semibold text-sm tracking-wider uppercase">Navigation</h3>
-            <ul className="space-y-2.5 text-sm text-stone-400">
-              <li><Link href="/" className="hover:text-emerald-400 transition-colors">Home</Link></li>
-              <li><Link href="/about" className="hover:text-emerald-400 transition-colors">About Us</Link></li>
-              <li><Link href="/why-choose-us" className="hover:text-emerald-400 transition-colors">Why Choose Us</Link></li>
-              <li><Link href="/location" className="hover:text-emerald-400 transition-colors">Location & Directions</Link></li>
-              <li><Link href="/blog" className="hover:text-emerald-400 transition-colors">Wellness Journal</Link></li>
-              <li><Link href="/contact" className="hover:text-emerald-400 transition-colors">Book Appointment</Link></li>
-              <li><Link href="/privacy-policy" className="hover:text-emerald-400 transition-colors">Privacy Policy</Link></li>
+            <ul className="space-y-2.5 text-sm text-stone-300">
+              <li><Link href="/" className="hover:text-emerald-300 transition-colors">Home</Link></li>
+              <li><Link href="/about" className="hover:text-emerald-300 transition-colors">About Us</Link></li>
+              <li><Link href="/why-choose-us" className="hover:text-emerald-300 transition-colors">Why Choose Us</Link></li>
+              <li><Link href="/location" className="hover:text-emerald-300 transition-colors">Location & Directions</Link></li>
+              <li><Link href="/blog" className="hover:text-emerald-300 transition-colors">Wellness Journal</Link></li>
+              <li><Link href="/contact" className="hover:text-emerald-300 transition-colors">Book Appointment</Link></li>
+              <li><Link href="/privacy-policy" className="hover:text-emerald-300 transition-colors">Privacy Policy</Link></li>
             </ul>
           </div>
 
           {/* Localized Landing Pages */}
           <div className="space-y-4">
             <h3 className="text-white font-semibold text-sm tracking-wider uppercase">Local Areas</h3>
-            <ul className="space-y-2.5 text-sm text-stone-400">
-              <li><Link href="/massage-center-bahria-town-phase-7" className="hover:text-emerald-400 transition-colors">Bahria Town Phase 7</Link></li>
-              <li><Link href="/spa-bahria-town" className="hover:text-emerald-400 transition-colors">Spa Bahria Town</Link></li>
-              <li><Link href="/massage-bahria-town" className="hover:text-emerald-400 transition-colors">Massage Bahria Town</Link></li>
-              <li><Link href="/massage-center-rawalpindi" className="hover:text-emerald-400 transition-colors">Massage Center Rawalpindi</Link></li>
-              <li><Link href="/full-body-massage" className="hover:text-emerald-400 transition-colors">Full Body Massage</Link></li>
-              <li><Link href="/body-massage" className="hover:text-emerald-400 transition-colors">Therapeutic Body Massage</Link></li>
-              <li><Link href="/spa-services" className="hover:text-emerald-400 transition-colors">Complete Services Menu</Link></li>
+            <ul className="space-y-2.5 text-sm text-stone-300">
+              <li><Link href="/massage-center-bahria-town-phase-7" className="hover:text-emerald-300 transition-colors">Bahria Town Phase 7</Link></li>
+              <li><Link href="/spa-bahria-town" className="hover:text-emerald-300 transition-colors">Spa Bahria Town</Link></li>
+              <li><Link href="/massage-bahria-town" className="hover:text-emerald-300 transition-colors">Massage Bahria Town</Link></li>
+              <li><Link href="/massage-center-rawalpindi" className="hover:text-emerald-300 transition-colors">Massage Center Rawalpindi</Link></li>
+              <li><Link href="/full-body-massage" className="hover:text-emerald-300 transition-colors">Full Body Massage</Link></li>
+              <li><Link href="/body-massage" className="hover:text-emerald-300 transition-colors">Therapeutic Body Massage</Link></li>
+              <li><Link href="/spa-services" className="hover:text-emerald-300 transition-colors">Complete Services Menu</Link></li>
             </ul>
           </div>
 
           {/* Verified Contact Details (NAP) */}
           <div className="space-y-4">
             <h3 className="text-white font-semibold text-sm tracking-wider uppercase">Verified Location</h3>
-            <ul className="space-y-3.5 text-sm text-stone-400">
+            <ul className="space-y-3.5 text-sm text-stone-300">
               <li className="flex items-start gap-3">
-                <MapPin className="h-5 w-5 text-emerald-500 shrink-0 mt-0.5" />
-                <span className="leading-snug">
+                <MapPin className="h-5 w-5 text-emerald-400 shrink-0 mt-0.5" />
+                <span className="leading-snug text-stone-200">
                   Bahria Town Phase 7, Near Nando&apos;s & Wallayat Complex, Rawalpindi, Pakistan
                 </span>
               </li>
               <li className="flex items-center gap-3">
-                <Phone className="h-5 w-5 text-emerald-500 shrink-0" />
-                <a href="tel:+923700802980" className="hover:text-emerald-400 transition-colors font-medium">
+                <Phone className="h-5 w-5 text-emerald-400 shrink-0" />
+                <a href="tel:+923700802980" className="hover:text-emerald-300 transition-colors font-medium text-stone-200">
                   +92 370 0802980
                 </a>
               </li>
               <li className="flex items-center gap-3">
-                <MessageCircle className="h-5 w-5 text-emerald-500 shrink-0" />
+                <MessageCircle className="h-5 w-5 text-emerald-400 shrink-0" />
                 <a
                   href="https://wa.me/923700802980"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-emerald-400 transition-colors"
+                  className="hover:text-emerald-300 transition-colors text-stone-200"
                 >
                   WhatsApp Consultation
                 </a>
               </li>
               <li className="flex items-center gap-3">
-                <Mail className="h-5 w-5 text-emerald-500 shrink-0" />
-                <a href="mailto:info@bestsparawalpindi.com" className="hover:text-emerald-400 transition-colors">
+                <Mail className="h-5 w-5 text-emerald-400 shrink-0" />
+                <a href="mailto:info@bestsparawalpindi.com" className="hover:text-emerald-300 transition-colors text-stone-200">
                   info@bestsparawalpindi.com
                 </a>
               </li>
-              <li className="flex items-start gap-3 text-xs text-stone-400 pt-1">
-                <Clock className="h-4 w-4 text-emerald-500/80 shrink-0 mt-0.5" />
-                <span>Mon–Fri: 10:00 AM – 4:40 AM<br /><strong className="text-emerald-400">Sat & Sun: 24 Hours Open</strong></span>
+              <li className="flex items-start gap-3 text-xs text-stone-300 pt-1">
+                <Clock className="h-4 w-4 text-emerald-400 shrink-0 mt-0.5" />
+                <span>Mon–Fri: 10:00 AM – 4:40 AM<br /><strong className="text-emerald-400 font-semibold">Sat & Sun: 24 Hours Open</strong></span>
               </li>
             </ul>
           </div>
 
         </div>
 
-        <div className="border-t border-stone-800/80 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-stone-500">
+        <div className="border-t border-stone-800/80 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-stone-300 font-medium">
           <p>© {currentYear} Best Spa Rawalpindi. All rights reserved.</p>
           <div className="flex items-center gap-4">
-            <Link href="/privacy-policy" className="hover:text-stone-400 transition-colors">Privacy Policy</Link>
+            <Link href="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</Link>
             <span>•</span>
-            <Link href="/location" className="hover:text-stone-400 transition-colors">Directions & Map</Link>
+            <Link href="/location" className="hover:text-white transition-colors">Directions & Map</Link>
             <span>•</span>
-            <Link href="/contact" className="hover:text-stone-400 transition-colors">Contact</Link>
+            <Link href="/contact" className="hover:text-white transition-colors">Contact</Link>
           </div>
         </div>
       </div>
