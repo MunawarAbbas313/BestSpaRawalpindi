@@ -55,31 +55,8 @@ export function ReviewsCarousel() {
         }, 3000);
     };
 
-    // Generate JSON-LD Structured Data
-    const jsonLd = {
-        "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        "name": "Best Spa Rawalpindi",
-        "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "4.9",
-            "reviewCount": reviews.length.toString()
-        },
-        "review": reviews.map(review => ({
-            "@type": "Review",
-            "author": { "@type": "Person", "name": review.name },
-            "datePublished": review.date,
-            "reviewBody": review.text,
-            "reviewRating": { "@type": "Rating", "ratingValue": review.rating }
-        }))
-    };
-
     return (
         <section className="py-24 overflow-hidden relative bg-gradient-to-br from-pink-50 via-white to-pink-100">
-            <script
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-            />
 
             <div className="container px-4 md:px-6 mx-auto mb-12 relative z-10">
                 <div className="text-center mb-10">

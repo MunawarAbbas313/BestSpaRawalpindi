@@ -1,79 +1,163 @@
-import { Metadata } from 'next';
+import { Metadata } from "next";
+import Link from "next/link";
+import { buttonVariants } from "@/components/ui/button";
 import { MapSection } from "@/components/shared/MapSection";
 import { FAQSection } from "@/components/ui/accordion";
 import { SEOKeywords } from "@/components/shared/SEOKeywords";
+import { CTASection } from "@/components/shared/CTASection";
+import { ShieldCheck, Sparkles, Heart, Award, CheckCircle2, Phone, Calendar } from "lucide-react";
+import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = {
-    title: "About Us | Best Spa Rawalpindi History & Team",
-    description: "Learn about the most relaxing spa in Rawalpindi. Our expert team, hygiene standards, and mission to provide luxury wellness services since 2015.",
+  title: "About Us | Luxury Wellness & Certified Massage Center Rawalpindi",
+  description:
+    "Discover Best Spa Rawalpindi in Bahria Town Phase 7. Certified massage therapists, hospital-grade sanitation, private luxury suites, and organic therapies.",
+  alternates: {
+    canonical: "/about",
+  },
 };
 
 const aboutFaqs = [
-    {
-        question: "How long have you been in business?",
-        answer: "Best Spa Rawalpindi was established in 2015. We have been serving the community with top-notch wellness services for over a decade."
-    },
-    {
-        question: "Is your staff certified?",
-        answer: "Yes, every member of our therapy team is certified from reputable wellness institutes and undergoes regular training to maintain high standards."
-    }
+  {
+    question: "Are all therapists certified at Best Spa Rawalpindi?",
+    answer:
+      "Yes, every massage therapist on our team holds verified professional certifications in bodywork and anatomical wellness, undergoing continuous internal quality training.",
+  },
+  {
+    question: "What hygiene protocols are followed?",
+    answer:
+      "We replace all Egyptian cotton linens after every client session, utilize medical-grade UV sterilizers for accessories, and thoroughly disinfect private therapy rooms between visits.",
+  },
+  {
+    question: "Where in Rawalpindi are you located?",
+    answer:
+      "Our wellness center is located in Bahria Town Phase 7, Rawalpindi (near Nando's and Wallayat Complex), offering easy highway access and free private parking.",
+  },
+  {
+    question: "Do you offer private suites for individuals and couples?",
+    answer:
+      "Yes, we provide individual private treatment suites as well as dedicated double suites for couples seeking synchronized relaxation.",
+  },
 ];
 
 export default function AboutPage() {
-    return (
-        <div className="bg-background min-h-screen">
-            <section className="py-20 container mx-auto px-4 md:px-6 max-w-4xl">
-                <h1 className="text-4xl md:text-5xl font-bold font-playfair text-foreground mb-8 text-center">Our Story of Serenity</h1>
+  const aboutSchema = {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    name: "About Best Spa Rawalpindi",
+    description: "About Best Spa Rawalpindi, luxury wellness and massage center in Bahria Town Phase 7.",
+    url: "https://bestsparawalpindi.com/about",
+  };
 
-                <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
-                    <p>
-                        Welcome to <strong>Best Spa Rawalpindi</strong>, your sanctuary of tranquility in the heart of the city.
-                        Established with a vision to bring world-class wellness therapies to Pakistan, we have quickly become
-                        the go-to destination for relaxation and rejuvenation.
-                    </p>
+  return (
+    <div className="bg-background min-h-screen">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(aboutSchema) }}
+      />
 
-                    <p>
-                        In today&apos;s fast-paced world, taking time for yourself isn&rsquo;t just a luxury—it&rsquo;s a necessity.
-                        Our spa is designed to be an escape from the noise and stress of daily life. From the moment you step through
-                        our doors, you are enveloped in a calming atmosphere of soft lighting, soothing aromas, and peaceful music.
-                    </p>
+      {/* Hero Header */}
+      <section className="bg-gradient-to-b from-primary/10 via-background to-background py-20 md:py-28 text-center">
+        <div className="container mx-auto px-4 max-w-4xl space-y-4">
+          <span className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-primary bg-primary/10 px-3.5 py-1 rounded-full">
+            <Sparkles className="h-3.5 w-3.5" /> Our Story & Values
+          </span>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-playfair text-foreground">
+            A Haven of Serenity & Healing in Bahria Town Rawalpindi
+          </h1>
+          <p className="text-muted-foreground text-base md:text-lg max-w-2xl mx-auto leading-relaxed">
+            Founded with a commitment to bring authentic, therapeutic bodywork and luxury spa care to the Twin Cities, Best Spa Rawalpindi is dedicated to restoring your physical balance and mental peace.
+          </p>
 
-                    <h2 className="text-2xl font-bold text-foreground mt-12 mb-4 font-playfair">Our Mission</h2>
-                    <p>
-                        Our mission is simple: to provide the highest quality massage and spa services that promote
-                        physical healing and mental well-being. We believe in the power of touch and the importance of
-                        holistic health. Every treatment is tailored to meet your unique needs.
-                    </p>
-
-                    <div className="my-12 p-8 bg-primary/5 rounded-3xl border border-primary/10">
-                        <h3 className="text-xl font-bold text-primary mb-4 font-playfair">The &quot;Best Spa&quot; Difference</h3>
-                        <p>
-                            What sets us apart is our attention to detail. We import our organic essential oils from sustainable farms,
-                            ensure our linens are Egyptian cotton for maximum comfort, and our treatment rooms are soundproofed
-                            to guarantee your absolute peace.
-                        </p>
-                    </div>
-
-                    <h2 className="text-2xl font-bold text-foreground mt-12 mb-4 font-playfair">Why Choose Us?</h2>
-                    <ul className="list-disc pl-6 space-y-2">
-                        <li><strong>Expert Therapists:</strong> Our team consists of certified and experienced professionals trained in various international techniques.</li>
-                        <li><strong>Hygiene First:</strong> we adhere to strict sanitation protocols. Fresh linens and sterilized equipment are guaranteed for every client.</li>
-                        <li><strong>Premium Products:</strong> We use only high-quality, organic oils and lotions that are safe for your skin.</li>
-                        <li><strong>Private & Secure:</strong> We prioritize your privacy and comfort offering separate areas for families and individuals.</li>
-                    </ul>
-                </div>
-            </section>
-
-            <section className="py-20 bg-muted/30">
-                <div className="container mx-auto px-4 max-w-3xl">
-                    <h2 className="text-3xl font-bold font-playfair text-center mb-10">About Us FAQ</h2>
-                    <FAQSection items={aboutFaqs} />
-                </div>
-            </section>
-
-            <MapSection />
-
-            <SEOKeywords />
+          <div className="flex flex-wrap justify-center gap-3 pt-4">
+            <Link
+              href="/contact"
+              className={cn(buttonVariants({ variant: "primary" }), "rounded-full gap-2 px-6 font-semibold")}
+            >
+              <Calendar className="h-4 w-4" /> Book Appointment
+            </Link>
+            <a
+              href="tel:+923700802980"
+              className={cn(buttonVariants({ variant: "outline" }), "rounded-full gap-2 px-6 font-semibold")}
+            >
+              <Phone className="h-4 w-4 text-emerald-600" /> Call: 0370 0802980
+            </a>
+          </div>
         </div>
-    );
+      </section>
+
+      {/* Story & Philosophy */}
+      <section className="py-16 container mx-auto px-4 md:px-6 max-w-4xl space-y-12">
+        <div className="space-y-6 text-muted-foreground text-base leading-relaxed">
+          <h2 className="text-2xl md:text-3xl font-bold font-playfair text-foreground">
+            Holistic Bodywork Designed for Modern Living
+          </h2>
+          <p>
+            In today&apos;s fast-paced environment, prolonged desk work, city commuting, and unrelenting stress take a heavy toll on our physiological health. At <strong>Best Spa Rawalpindi</strong>, we believe massage therapy is not an occasional luxury, but an essential component of preventative self-care.
+          </p>
+          <p>
+            Conveniently situated in <strong>Bahria Town Phase 7</strong>, our facility was custom-engineered to isolate you from outside traffic noise. From acoustically insulated treatment suites to warm ambient lighting and custom essential oil aromas, every sensory element is harmonized for deep restoration.
+          </p>
+        </div>
+
+        {/* Pillars of Quality */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-4">
+          <div className="p-6 rounded-2xl bg-card border border-border space-y-3">
+            <div className="h-10 w-10 rounded-full bg-primary/10 text-primary flex items-center justify-center">
+              <Award className="h-5 w-5" />
+            </div>
+            <h3 className="text-lg font-bold font-playfair text-foreground">Certified Professional Therapists</h3>
+            <p className="text-sm text-muted-foreground leading-relaxed">
+              We uphold strict employment criteria. Each therapist is certified in anatomical principles, muscle kneading, and traditional modalities like Thai and Swedish massage.
+            </p>
+          </div>
+
+          <div className="p-6 rounded-2xl bg-card border border-border space-y-3">
+            <div className="h-10 w-10 rounded-full bg-primary/10 text-primary flex items-center justify-center">
+              <ShieldCheck className="h-5 w-5" />
+            </div>
+            <h3 className="text-lg font-bold font-playfair text-foreground">Hospital-Grade Cleanliness</h3>
+            <p className="text-sm text-muted-foreground leading-relaxed">
+              Every client receives fresh, sanitized Egyptian cotton linens. Our suites and equipment undergo thorough sterilization after every appointment.
+            </p>
+          </div>
+
+          <div className="p-6 rounded-2xl bg-card border border-border space-y-3">
+            <div className="h-10 w-10 rounded-full bg-primary/10 text-primary flex items-center justify-center">
+              <Heart className="h-5 w-5" />
+            </div>
+            <h3 className="text-lg font-bold font-playfair text-foreground">100% Pure Organic Oils</h3>
+            <p className="text-sm text-muted-foreground leading-relaxed">
+              We exclusively utilize pure, cold-pressed botanical oils like sweet almond, jojoba, and therapeutic essential oils that deeply nourish your skin.
+            </p>
+          </div>
+
+          <div className="p-6 rounded-2xl bg-card border border-border space-y-3">
+            <div className="h-10 w-10 rounded-full bg-primary/10 text-primary flex items-center justify-center">
+              <CheckCircle2 className="h-5 w-5" />
+            </div>
+            <h3 className="text-lg font-bold font-playfair text-foreground">Absolute Discretion & Privacy</h3>
+            <p className="text-sm text-muted-foreground leading-relaxed">
+              Our individual private suites and couples retreat rooms guarantee complete confidentiality and a peaceful atmosphere.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* About FAQs */}
+      <section className="py-20 bg-muted/20 border-t border-border">
+        <div className="container mx-auto px-4 max-w-3xl space-y-8">
+          <div className="text-center space-y-2">
+            <span className="text-xs font-bold uppercase tracking-wider text-primary">Transparency</span>
+            <h2 className="text-3xl font-bold font-playfair text-foreground">About Our Standards FAQ</h2>
+          </div>
+          <FAQSection items={aboutFaqs} />
+        </div>
+      </section>
+
+      <CTASection />
+      <MapSection />
+      <SEOKeywords />
+    </div>
+  );
 }
