@@ -50,13 +50,13 @@ export function Navbar() {
           </div>
           <div className="flex items-center gap-3">
             <a
-              href="https://wa.me/923700802980?text=Hi!+I+would+like+to+book+an+appointment+at+Best+Spa+Rawalpindi."
+              href="https://wa.me/923065656413?text=Hi!+I+would+like+to+book+an+appointment+at+Best+Spa+Rawalpindi."
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="Contact Best Spa Rawalpindi on WhatsApp at 0370 0802980"
+              aria-label="Contact Best Spa Rawalpindi on WhatsApp at 03065656413"
               className="inline-flex items-center gap-1.5 bg-emerald-700 hover:bg-emerald-800 text-white font-bold px-3.5 py-1 rounded-full text-xs transition-all shadow-sm active:scale-95"
             >
-              <MessageCircle className="h-3.5 w-3.5 text-emerald-200" /> WhatsApp: 0370 0802980
+              <MessageCircle className="h-3.5 w-3.5 text-emerald-200" /> WhatsApp: 03065656413
             </a>
             <span className="hidden sm:inline text-stone-300 font-medium">• Bahria Phase 7 (Near Nando&apos;s)</span>
           </div>
@@ -118,11 +118,11 @@ export function Navbar() {
               <span>WhatsApp</span>
             </a>
             <a
-              href="tel:+923700802980"
+              href="tel:+923065656413"
               className="flex items-center gap-1.5 text-xs font-semibold text-foreground/80 hover:text-primary px-3 py-1.5 rounded-full border border-border hover:border-primary/50 transition-colors"
             >
               <Phone className="h-3.5 w-3.5 text-emerald-600" />
-              <span>0370 0802980</span>
+              <span>03065656413</span>
             </a>
             <Link
               href="/contact"
@@ -192,14 +192,14 @@ export function Navbar() {
                   className="flex items-center justify-center gap-2 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs shadow-sm transition-colors"
                 >
                   <MessageCircle className="h-4 w-4" />
-                  Chat on WhatsApp: +92 370 0802980
+                  Chat on WhatsApp: +92 3065656413
                 </a>
                 <a
-                  href="tel:+923700802980"
+                  href="tel:+923065656413"
                   className="flex items-center justify-center gap-2 py-2.5 rounded-xl bg-muted font-bold text-xs text-foreground"
                 >
                   <Phone className="h-4 w-4 text-emerald-600" />
-                  Call Now: +92 370 0802980
+                  Call Now: +92 3065656413
                 </a>
                 <Link
                   href="/contact"
