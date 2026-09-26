@@ -29,7 +29,7 @@ export function Footer() {
             </div>
             <div className="flex gap-4 pt-3">
               <a
-                href="https://wa.me/923700802980"
+                href="https://wa.me/923065656413"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Chat on WhatsApp with Best Spa Rawalpindi"
@@ -39,7 +39,7 @@ export function Footer() {
               </a>
               <a
                 href="tel:+923700802980"
-                aria-label="Call Best Spa Rawalpindi reception at 0370 0802980"
+                aria-label="Call Best Spa Rawalpindi reception at 03065656413"
                 className="h-9 w-9 rounded-full bg-stone-900 border border-stone-800 flex items-center justify-center text-stone-300 hover:text-emerald-400 hover:border-emerald-500/50 transition-colors"
               >
                 <Phone className="h-4 w-4" />
@@ -106,13 +106,13 @@ export function Footer() {
               <li className="flex items-center gap-3">
                 <Phone className="h-5 w-5 text-emerald-400 shrink-0" />
                 <a href="tel:+923700802980" className="hover:text-emerald-300 transition-colors font-medium text-stone-200">
-                  +92 370 0802980
+                  +92 3065656413
                 </a>
               </li>
               <li className="flex items-center gap-3">
                 <MessageCircle className="h-5 w-5 text-emerald-400 shrink-0" />
                 <a
-                  href="https://wa.me/923700802980"
+                  href="https://wa.me/923065656413"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-emerald-300 transition-colors text-stone-200"
