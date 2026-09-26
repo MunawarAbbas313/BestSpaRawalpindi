@@ -80,7 +80,7 @@ export default function AboutPage() {
               href="tel:+923700802980"
               className={cn(buttonVariants({ variant: "outline" }), "rounded-full gap-2 px-6 font-semibold")}
             >
-              <Phone className="h-4 w-4 text-emerald-600" /> Call: 0370 0802980
+              <Phone className="h-4 w-4 text-emerald-600" /> Call: 03065656413
             </a>
           </div>
         </div>
