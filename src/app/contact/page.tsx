@@ -44,7 +44,7 @@ const contactFaqs = [
 ];
 
 const whatsappUrl =
-  "https://wa.me/923700802980?text=" +
+  "https://wa.me/923065656413?text=" +
   encodeURIComponent("Hi! I would like to book an appointment at Best Spa Rawalpindi (Bahria Town Phase 7).");
 
 export default function ContactPage() {
@@ -57,7 +57,7 @@ export default function ContactPage() {
     mainEntity: {
       "@type": "DaySpa",
       name: "Best Spa Rawalpindi",
-      telephone: "+923700802980",
+      telephone: "+923065656413",
       address: {
         "@type": "PostalAddress",
         streetAddress: "Bahria Town Phase 7, Near Nando's",
@@ -97,7 +97,7 @@ export default function ContactPage() {
             className="flex items-center justify-center gap-3 bg-primary text-primary-foreground rounded-2xl px-6 py-5 text-lg font-bold shadow-md hover:opacity-95 transition-all"
           >
             <Phone className="h-6 w-6" />
-            <span>Call Now: 0370 0802980</span>
+            <span>Call Now: 03065656413</span>
           </a>
 
           <a
@@ -140,7 +140,7 @@ export default function ContactPage() {
                   <div>
                     <p className="font-semibold text-white">Phone Number</p>
                     <a href="tel:+923700802980" className="text-emerald-400 hover:underline font-medium">
-                      +92 370 0802980
+                      +92 3065656413
                     </a>
                   </div>
                 </div>
@@ -219,7 +219,7 @@ export default function ContactPage() {
                     name="phone"
                     required
                     className="w-full p-3 text-sm rounded-xl border border-input bg-background focus:outline-none focus:ring-2 focus:ring-primary"
-                    placeholder="0300 1234567"
+                    placeholder="03065656413"
                   />
                 </div>
               </div>
