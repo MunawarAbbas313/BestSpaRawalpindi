@@ -36,7 +36,7 @@ export const blogPosts: BlogPost[] = [
         <li>Disinfected, soundproof private suites equipped with climate control and soothing aromatherapy diffusers.</li>
       </ul>
 
-      <p>Experience the standard of genuine luxury care. <a href="/contact">Book your appointment at Best Spa Rawalpindi</a> or call our reception at <a href="tel:+923700802980">+92 370 0802980</a>.</p>
+      <p>Experience the standard of genuine luxury care. <a href="/contact">Book your appointment at Best Spa Rawalpindi</a> or call our reception at <a href="tel:+923065656413">+92 306 5656413</a>.</p>
     `,
     faqs: [
       {
@@ -75,7 +75,7 @@ export const blogPosts: BlogPost[] = [
       <h2>5. Restorative Sleep Enhancement</h2>
       <p>By shifting your central nervous system into the parasympathetic "rest and digest" state, full body massage helps reset your sleep architecture, promoting deeper delta-wave sleep cycles.</p>
 
-      <p>Ready to experience true revitalization? Discover our specialized <a href="/full-body-massage">Full Body Massage treatments</a> or call <a href="tel:+923700802980">+92 370 0802980</a> to schedule your session today.</p>
+      <p>Ready to experience true revitalization? Discover our specialized <a href="/full-body-massage">Full Body Massage treatments</a> or call <a href="tel:+923065656413">+92 306 5656413</a> to schedule your session today.</p>
     `,
     faqs: [
       {
@@ -108,7 +108,7 @@ export const blogPosts: BlogPost[] = [
       <h2>Step 3: Communication During Treatment</h2>
       <p>Your comfort is paramount. You are always encouraged to provide real-time feedback regarding room temperature, background music, or the pressure being applied. If you prefer quiet relaxation without conversation, our therapists respect your preference.</p>
 
-      <p>Have more questions before booking? Check out our <a href="/why-choose-us">Why Choose Us</a> standards or contact our friendly team on WhatsApp at <a href="https://wa.me/923700802980">+92 370 0802980</a>.</p>
+      <p>Have more questions before booking? Check out our <a href="/why-choose-us">Why Choose Us</a> standards or contact our friendly team on WhatsApp at <a href="https://wa.me/923065656413">+92 306 5656413</a>.</p>
     `,
     faqs: [
       {
@@ -200,7 +200,7 @@ export const blogPosts: BlogPost[] = [
       <h2>The Science of Tactile Receptors</h2>
       <p>When our skilled therapists apply rhythmic pressure to the skin, Pacinian corpuscles and Merkel nerve endings send soothing signals directly to the vagus nerve. This triggers the parasympathetic response, slowing your heart rate and releasing natural endorphins.</p>
 
-      <p>Experience the calm at <strong>Best Spa Rawalpindi</strong>. Contact us at <a href="tel:+923700802980">+92 370 0802980</a> to book your stress-relief session.</p>
+      <p>Experience the calm at <strong>Best Spa Rawalpindi</strong>. Contact us at <a href="tel:+923065656413">+92 306 5656413</a> to book your stress-relief session.</p>
     `
   },
   {
@@ -263,7 +263,7 @@ export const blogPosts: BlogPost[] = [
         <li><strong>Arrive 10 Minutes Early:</strong> Give yourself time to transition out of traffic into our calm, peaceful environment.</li>
       </ul>
 
-      <p>Book with confidence at <a href="/contact">Best Spa Rawalpindi</a>. Call <a href="tel:+923700802980">+92 370 0802980</a>.</p>
+      <p>Book with confidence at <a href="/contact">Best Spa Rawalpindi</a>. Call <a href="tel:+923065656413">+92 306 5656413</a>.</p>
     `
   },
   {
@@ -339,7 +339,7 @@ export const blogPosts: BlogPost[] = [
     content: `
       <p>A "muscle knot" is a localized area of micro-spasm where actin and myosin filaments remain locked together due to insufficient oxygen and blood supply. Our certified therapists utilize ischemic compression and cross-fiber friction to gently coax the muscle back into resting elongation.</p>
 
-      <p>Learn more about our specialized <a href="/full-body-massage">Full Body and Deep Tissue techniques</a> or call <a href="tel:+923700802980">+92 370 0802980</a>.</p>
+      <p>Learn more about our specialized <a href="/full-body-massage">Full Body and Deep Tissue techniques</a> or call <a href="tel:+923065656413">+92 306 5656413</a>.</p>
     `
   },
   {
@@ -372,7 +372,7 @@ export const blogPosts: BlogPost[] = [
         <li>Lowers elevated systolic and diastolic blood pressure.</li>
         <li>Reduces cortisol levels and stimulates restorative sleep.</li>
       </ul>
-      <p>Experience targeted relief. <a href="/contact">Book your deep tissue session</a> or call <a href="tel:+923700802980">+92 370 0802980</a>.</p>
+      <p>Experience targeted relief. <a href="/contact">Book your deep tissue session</a> or call <a href="tel:+923065656413">+92 306 5656413</a>.</p>
     `
   },
   {
@@ -385,7 +385,7 @@ export const blogPosts: BlogPost[] = [
     readingTime: "5 min read",
     content: `
       <p>At Best Spa Rawalpindi in Bahria Town Phase 7, we provide private, discreet, and certified therapies tailored specifically for active men and busy executives. From high-intensity sports recovery massages to executive stress-relief sessions, our treatments restore peak physical performance.</p>
-      <p>Call our reception at <a href="tel:+923700802980">+92 370 0802980</a> to schedule your session.</p>
+      <p>Call our reception at <a href="tel:+923065656413">+92 306 5656413</a> to schedule your session.</p>
     `
   },
   {
@@ -411,7 +411,7 @@ export const blogPosts: BlogPost[] = [
     readingTime: "4 min read",
     content: `
       <p>Our dedicated double suites in Bahria Town Phase 7 feature soothing candlelight, calming aromatherapy, and synchronized Swedish or Aromatherapy treatments tailored for couples.</p>
-      <p>Reserve your private couple suite in advance via WhatsApp at <a href="https://wa.me/923700802980">+92 370 0802980</a>.</p>
+      <p>Reserve your private couple suite in advance via WhatsApp at <a href="https://wa.me/923065656413">+92 306 5656413</a>.</p>
     `
   }
 ];

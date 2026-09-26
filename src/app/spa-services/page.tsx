@@ -11,7 +11,7 @@ import { cn } from "@/lib/utils";
 export const metadata: Metadata = {
   title: "Spa Services in Rawalpindi & Bahria Town | Luxury Wellness Packages",
   description:
-    "Explore luxury spa services in Bahria Town Phase 7, Rawalpindi. Full body massages, facial wellness, reflexology, and couple retreat packages. Call +92 370 0802980.",
+    "Explore luxury spa services in Bahria Town Phase 7, Rawalpindi. Full body massages, facial wellness, reflexology, and couple retreat packages. Call +92 306 5656413.",
   alternates: {
     canonical: "/spa-services",
   },
@@ -76,7 +76,7 @@ const faqs = [
   {
     question: "How do I book a spa service in Bahria Town?",
     answer:
-      "Simply call our reception at +92 370 0802980 or click the WhatsApp button to reserve your slot directly with our front desk.",
+      "Simply call our reception at +92 306 5656413 or click the WhatsApp button to reserve your slot directly with our front desk.",
   },
 ];
 
@@ -122,10 +122,10 @@ export default function SpaServicesPage() {
               <Calendar className="h-5 w-5" /> Book Spa Package
             </Link>
             <a
-              href="tel:+923700802980"
+              href="tel:+923065656413"
               className={cn(buttonVariants({ variant: "outline", size: "lg" }), "rounded-full font-bold gap-2 px-8")}
             >
-              <Phone className="h-5 w-5 text-emerald-600" /> Call: 0370 0802980
+              <Phone className="h-5 w-5 text-emerald-600" /> Call: 0306 5656413
             </a>
           </div>
         </div>
@@ -188,7 +188,7 @@ export default function SpaServicesPage() {
 
       <CTASection
         title="Experience Premium Spa Services in Bahria Town"
-        subtitle="Call 0370 0802980 or reach out on WhatsApp to reserve your treatment."
+        subtitle="Call 0306 5656413 or reach out on WhatsApp to reserve your treatment."
       />
       <MapSection />
       <SEOKeywords />

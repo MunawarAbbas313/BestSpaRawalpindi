@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button";
 export function WhatsAppWidget() {
     const [isOpen, setIsOpen] = useState(false);
 
-    const phoneNumber = "923700802980";
+    const phoneNumber = "923065656413";
     const message = "Hi! I would like to book an appointment.";
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 

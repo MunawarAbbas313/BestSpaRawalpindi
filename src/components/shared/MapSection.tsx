@@ -73,7 +73,7 @@ export function MapSection() {
                 <Navigation className="h-4 w-4" /> Get Driving Directions
               </a>
               <a
-                href="tel:+923700802980"
+                href="tel:+923065656413"
                 className={cn(buttonVariants({ variant: "outline" }), "rounded-full gap-2 px-6 border-border")}
               >
                 <Phone className="h-4 w-4 text-emerald-600" /> Call for Reception

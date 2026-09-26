@@ -38,7 +38,7 @@ export function Footer() {
                 <MessageCircle className="h-4 w-4" />
               </a>
               <a
-                href="tel:+923700802980"
+                href="tel:+923065656413"
                 aria-label="Call Best Spa Rawalpindi reception at 03065656413"
                 className="h-9 w-9 rounded-full bg-stone-900 border border-stone-800 flex items-center justify-center text-stone-300 hover:text-emerald-400 hover:border-emerald-500/50 transition-colors"
               >

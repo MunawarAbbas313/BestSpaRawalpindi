@@ -57,7 +57,7 @@ const faqs = [
   {
     question: "Can I get assistance if I have trouble finding the entrance?",
     answer:
-      "Absolutely! Call our reception at +92 370 0802980, and our front desk will guide you directly to our parking area.",
+      "Absolutely! Call our reception at +92 306 5656413, and our front desk will guide you directly to our parking area.",
   },
 ];
 
@@ -81,7 +81,7 @@ export default function LocationPage() {
       latitude: 33.54958,
       longitude: 73.12232,
     },
-    telephone: "+923700802980",
+    telephone: "+923065656413",
   };
 
   return (
@@ -114,10 +114,10 @@ export default function LocationPage() {
               <Navigation className="h-5 w-5" /> Open Google Maps Directions
             </a>
             <a
-              href="tel:+923700802980"
+              href="tel:+923065656413"
               className={cn(buttonVariants({ variant: "outline", size: "lg" }), "rounded-full font-bold gap-2 px-8")}
             >
-              <Phone className="h-5 w-5 text-emerald-600" /> Call Reception: 0370 0802980
+              <Phone className="h-5 w-5 text-emerald-600" /> Call Reception: 0306 5656413
             </a>
           </div>
         </div>
@@ -238,7 +238,7 @@ export default function LocationPage() {
 
       <CTASection
         title="Visit Best Spa in Bahria Town Phase 7"
-        subtitle="Call 0370 0802980 or message on WhatsApp for instant assistance."
+        subtitle="Call 0306 5656413 or message on WhatsApp for instant assistance."
       />
       <SEOKeywords />
     </div>

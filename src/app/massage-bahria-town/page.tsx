@@ -11,7 +11,7 @@ import { cn } from "@/lib/utils";
 export const metadata: Metadata = {
   title: "Professional Massage in Bahria Town Rawalpindi | Certified Therapists",
   description:
-    "Looking for a professional massage in Bahria Town Rawalpindi? Certified therapists for Deep Tissue, Thai, Swedish, and Full Body Massage in Phase 7. Call +92 370 0802980.",
+    "Looking for a professional massage in Bahria Town Rawalpindi? Certified therapists for Deep Tissue, Thai, Swedish, and Full Body Massage in Phase 7. Call +92 306 5656413.",
   alternates: {
     canonical: "/massage-bahria-town",
   },
@@ -82,10 +82,10 @@ export default function MassageBahriaTownPage() {
               <Calendar className="h-5 w-5" /> Book Your Massage
             </Link>
             <a
-              href="tel:+923700802980"
+              href="tel:+923065656413"
               className={cn(buttonVariants({ variant: "outline", size: "lg" }), "rounded-full font-bold gap-2 px-8")}
             >
-              <Phone className="h-5 w-5 text-emerald-600" /> Call: 0370 0802980
+              <Phone className="h-5 w-5 text-emerald-600" /> Call: 0306 5656413
             </a>
           </div>
         </div>
@@ -167,7 +167,7 @@ export default function MassageBahriaTownPage() {
 
       <CTASection
         title="Schedule Your Massage in Bahria Town Today"
-        subtitle="Call 0370 0802980 or message on WhatsApp to reserve your certified therapist in Phase 7."
+        subtitle="Call 0306 5656413 or message on WhatsApp to reserve your certified therapist in Phase 7."
       />
       <MapSection />
       <SEOKeywords />

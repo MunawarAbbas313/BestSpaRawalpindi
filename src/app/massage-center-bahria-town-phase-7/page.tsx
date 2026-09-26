@@ -11,7 +11,7 @@ import { cn } from "@/lib/utils";
 export const metadata: Metadata = {
   title: "Massage Center in Bahria Town Phase 7 Rawalpindi | Best Spa (Near Nando's)",
   description:
-    "Looking for a massage center in Bahria Town Phase 7, Rawalpindi? Best Spa is located near Nando's. Certified therapists, private suites, Swedish, Thai & Deep Tissue. Call +92 370 0802980.",
+    "Looking for a massage center in Bahria Town Phase 7, Rawalpindi? Best Spa is located near Nando's. Certified therapists, private suites, Swedish, Thai & Deep Tissue. Call +92 306 5656413.",
   alternates: {
     canonical: "/massage-center-bahria-town-phase-7",
   },
@@ -47,7 +47,7 @@ export default function MassageCenterPhase7Page() {
     name: "Best Spa - Massage Center Bahria Town Phase 7",
     description:
       "Top-rated luxury massage center and spa located in Bahria Town Phase 7 near Nando's, Rawalpindi.",
-    telephone: "+923700802980",
+    telephone: "+923065656413",
     url: "https://bestsparawalpindi.com/massage-center-bahria-town-phase-7",
     address: {
       "@type": "PostalAddress",
@@ -109,10 +109,10 @@ export default function MassageCenterPhase7Page() {
               <Calendar className="h-5 w-5" /> Book in Phase 7
             </Link>
             <a
-              href="tel:+923700802980"
+              href="tel:+923065656413"
               className={cn(buttonVariants({ variant: "outline", size: "lg" }), "rounded-full font-bold gap-2 px-8")}
             >
-              <Phone className="h-5 w-5 text-emerald-600" /> Call: 0370 0802980
+              <Phone className="h-5 w-5 text-emerald-600" /> Call: 0306 5656413
             </a>
           </div>
         </div>
@@ -203,7 +203,7 @@ export default function MassageCenterPhase7Page() {
 
       <CTASection
         title="Visit Us in Bahria Town Phase 7 Today"
-        subtitle="Call +92 370 0802980 or message on WhatsApp to reserve your slot."
+        subtitle="Call +92 306 5656413 or message on WhatsApp to reserve your slot."
       />
       <MapSection />
       <SEOKeywords />

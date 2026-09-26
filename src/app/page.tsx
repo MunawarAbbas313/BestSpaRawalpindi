@@ -16,7 +16,7 @@ import { CTASection } from "@/components/shared/CTASection";
 export const metadata: Metadata = {
   title: "Best Spa & Massage Center in Bahria Town Rawalpindi",
   description:
-    "Top-rated luxury spa & massage center in Bahria Town Phase 7, Rawalpindi. Certified therapists, Swedish, Thai, Deep Tissue, and Full Body Massage. Call +92 370 0802980.",
+    "Top-rated luxury spa & massage center in Bahria Town Phase 7, Rawalpindi. Certified therapists, Swedish, Thai, Deep Tissue, and Full Body Massage. Call +92 306 5656413.",
   alternates: {
     canonical: "/",
   },
@@ -41,7 +41,7 @@ const homeFaqs = [
   {
     question: "Do I need to book an appointment in advance?",
     answer:
-      "Yes, we highly recommend booking in advance via phone call (+92 370 0802980) or WhatsApp to ensure therapist and private suite availability. Walk-ins are accommodated based on open slots.",
+      "Yes, we highly recommend booking in advance via phone call (+92 306 5656413) or WhatsApp to ensure therapist and private suite availability. Walk-ins are accommodated based on open slots.",
   },
   {
     question: "What are your operating hours?",
@@ -266,7 +266,7 @@ export default function Home() {
       {/* Conversion CTA */}
       <CTASection
         title="Ready for the Best Massage in Bahria Town Rawalpindi?"
-        subtitle="Call 0370 0802980 or message us on WhatsApp to reserve your certified therapist today."
+        subtitle="Call 0306 5656413 or message us on WhatsApp to reserve your certified therapist today."
       />
 
       {/* Location & Map Section */}

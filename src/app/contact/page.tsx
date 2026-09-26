@@ -9,7 +9,7 @@ import { cn } from "@/lib/utils";
 export const metadata: Metadata = {
   title: "Contact Us & Book Appointment | Best Spa Rawalpindi Bahria Phase 7",
   description:
-    "Contact Best Spa Rawalpindi in Bahria Town Phase 7 (near Nando's). Call +92 370 0802980 or message on WhatsApp to reserve your certified massage therapy session.",
+    "Contact Best Spa Rawalpindi in Bahria Town Phase 7 (near Nando's). Call +92 306 5656413 or message on WhatsApp to reserve your certified massage therapy session.",
   alternates: {
     canonical: "/contact",
   },
@@ -24,7 +24,7 @@ const contactFaqs = [
   {
     question: "What is the fastest way to book an appointment?",
     answer:
-      "Calling our reception directly at +92 370 0802980 or sending a message on WhatsApp is the fastest way to confirm your preferred therapist and time slot instantly.",
+      "Calling our reception directly at +92 306 5656413 or sending a message on WhatsApp is the fastest way to confirm your preferred therapist and time slot instantly.",
   },
   {
     question: "What payment methods do you accept?",
@@ -93,7 +93,7 @@ export default function ContactPage() {
         {/* Call & WhatsApp Quick Conversion Bar */}
         <div className="max-w-4xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-4 mb-12">
           <a
-            href="tel:+923700802980"
+            href="tel:+923065656413"
             className="flex items-center justify-center gap-3 bg-primary text-primary-foreground rounded-2xl px-6 py-5 text-lg font-bold shadow-md hover:opacity-95 transition-all"
           >
             <Phone className="h-6 w-6" />
@@ -139,7 +139,7 @@ export default function ContactPage() {
                   <Phone className="h-5 w-5 text-emerald-400 shrink-0 mt-0.5" />
                   <div>
                     <p className="font-semibold text-white">Phone Number</p>
-                    <a href="tel:+923700802980" className="text-emerald-400 hover:underline font-medium">
+                    <a href="tel:+923065656413" className="text-emerald-400 hover:underline font-medium">
                       +92 3065656413
                     </a>
                   </div>

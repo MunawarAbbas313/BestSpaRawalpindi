@@ -109,7 +109,7 @@ export function Navbar() {
           {/* Desktop Call, WhatsApp & Book */}
           <div className="hidden sm:flex items-center gap-2 shrink-0">
             <a
-              href="https://wa.me/923700802980?text=Hi!+I+would+like+to+book+an+appointment+at+Best+Spa+Rawalpindi."
+              href="https://wa.me/923065656413?text=Hi!+I+would+like+to+book+an+appointment+at+Best+Spa+Rawalpindi."
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-1.5 text-xs font-semibold bg-emerald-600 hover:bg-emerald-700 text-white px-3 py-1.5 rounded-full transition-all shadow-sm active:scale-95"
@@ -186,7 +186,7 @@ export function Navbar() {
                   <span>Mon–Fri: 10AM–4:40AM | Sat & Sun: 24 Hours</span>
                 </div>
                 <a
-                  href="https://wa.me/923700802980?text=Hi!+I+would+like+to+book+an+appointment+at+Best+Spa+Rawalpindi."
+                  href="https://wa.me/923065656413?text=Hi!+I+would+like+to+book+an+appointment+at+Best+Spa+Rawalpindi."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-center gap-2 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs shadow-sm transition-colors"

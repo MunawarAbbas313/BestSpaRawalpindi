@@ -11,7 +11,7 @@ import { cn } from "@/lib/utils";
 export const metadata: Metadata = {
   title: "Why Choose Best Spa Rawalpindi | Certified Therapists & Hygiene Standards",
   description:
-    "Discover why Best Spa is Rawalpindi's #1 trusted massage and wellness destination. 100% certified therapists, hospital-grade sanitation, private luxury suites. Call +92 370 0802980.",
+    "Discover why Best Spa is Rawalpindi's #1 trusted massage and wellness destination. 100% certified therapists, hospital-grade sanitation, private luxury suites. Call +92 306 5656413.",
   alternates: {
     canonical: "/why-choose-us",
   },
@@ -116,10 +116,10 @@ export default function WhyChooseUsPage() {
               <Calendar className="h-5 w-5" /> Book Your Appointment
             </Link>
             <a
-              href="tel:+923700802980"
+              href="tel:+923065656413"
               className={cn(buttonVariants({ variant: "outline", size: "lg" }), "rounded-full font-bold gap-2 px-8")}
             >
-              <Phone className="h-5 w-5 text-emerald-600" /> Call: 0370 0802980
+              <Phone className="h-5 w-5 text-emerald-600" /> Call: 0306 5656413
             </a>
           </div>
         </div>
@@ -176,7 +176,7 @@ export default function WhyChooseUsPage() {
 
       <CTASection
         title="Experience the Difference at Best Spa Rawalpindi"
-        subtitle="Call +92 370 0802980 or message on WhatsApp to reserve your certified session in Bahria Town Phase 7."
+        subtitle="Call +92 306 5656413 or message on WhatsApp to reserve your certified session in Bahria Town Phase 7."
       />
       <MapSection />
       <SEOKeywords />

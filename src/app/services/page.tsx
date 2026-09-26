@@ -12,7 +12,7 @@ import { cn } from "@/lib/utils";
 export const metadata: Metadata = {
   title: "Best Massage Services & Spa Menu in Rawalpindi | Best Spa",
   description:
-    "Explore full massage therapies and spa menu in Bahria Town Phase 7, Rawalpindi. Full body, Swedish, Thai, Deep Tissue, Hot Stone, and Couples packages. Call +92 370 0802980.",
+    "Explore full massage therapies and spa menu in Bahria Town Phase 7, Rawalpindi. Full body, Swedish, Thai, Deep Tissue, Hot Stone, and Couples packages. Call +92 306 5656413.",
   alternates: {
     canonical: "/services",
   },
@@ -123,7 +123,7 @@ const serviceFaqs = [
   {
     question: "How do I book an appointment?",
     answer:
-      "You can book instantly by calling +92 370 0802980 or messaging us on WhatsApp. We recommend booking in advance for weekend slots.",
+      "You can book instantly by calling +92 306 5656413 or messaging us on WhatsApp. We recommend booking in advance for weekend slots.",
   },
   {
     question: "Where are the treatments performed?",
@@ -146,7 +146,7 @@ export default function ServicesPage() {
         provider: {
           "@type": "DaySpa",
           name: "Best Spa Rawalpindi",
-          telephone: "+923700802980",
+          telephone: "+923065656413",
           address: {
             "@type": "PostalAddress",
             streetAddress: "Bahria Town Phase 7, Near Nando's",
@@ -181,13 +181,13 @@ export default function ServicesPage() {
 
           <div className="flex flex-wrap justify-center gap-3 pt-4">
             <a
-              href="tel:+923700802980"
+              href="tel:+923065656413"
               className={cn(buttonVariants({ variant: "primary" }), "rounded-full gap-2 px-6 font-semibold")}
             >
-              <Phone className="h-4 w-4" /> Call: 0370 0802980
+              <Phone className="h-4 w-4" /> Call: 0306 5656413
             </a>
             <a
-              href="https://wa.me/923700802980?text=Hi!+I+would+like+to+book+a+massage+service."
+              href="https://wa.me/923065656413?text=Hi!+I+would+like+to+book+a+massage+service."
               target="_blank"
               rel="noopener noreferrer"
               className={cn(buttonVariants({ variant: "outline" }), "rounded-full gap-2 px-6 font-semibold border-emerald-500/50 text-emerald-700 dark:text-emerald-400")}
@@ -275,7 +275,7 @@ export default function ServicesPage() {
 
       <CTASection
         title="Ready to Reserve Your Treatment?"
-        subtitle="Call +92 370 0802980 or connect with us on WhatsApp for fast reservation confirmation."
+        subtitle="Call +92 306 5656413 or connect with us on WhatsApp for fast reservation confirmation."
       />
       <MapSection />
       <SEOKeywords />

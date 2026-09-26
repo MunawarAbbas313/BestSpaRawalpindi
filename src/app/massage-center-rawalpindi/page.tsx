@@ -11,7 +11,7 @@ import { cn } from "@/lib/utils";
 export const metadata: Metadata = {
   title: "Best Massage Center in Rawalpindi | Certified Therapists & Luxury Suites",
   description:
-    "Looking for the best massage center in Rawalpindi? Best Spa offers certified Swedish, Thai, Deep Tissue & Full Body Massage in Bahria Town Phase 7. Call +92 370 0802980.",
+    "Looking for the best massage center in Rawalpindi? Best Spa offers certified Swedish, Thai, Deep Tissue & Full Body Massage in Bahria Town Phase 7. Call +92 306 5656413.",
   alternates: {
     canonical: "/massage-center-rawalpindi",
   },
@@ -36,7 +36,7 @@ const faqs = [
   {
     question: "How do I book a massage session?",
     answer:
-      "You can book immediately by calling our reception at +92 370 0802980 or messaging us on WhatsApp. Advanced booking is recommended for peak evening and weekend slots.",
+      "You can book immediately by calling our reception at +92 306 5656413 or messaging us on WhatsApp. Advanced booking is recommended for peak evening and weekend slots.",
   },
 ];
 
@@ -47,7 +47,7 @@ export default function MassageCenterRawalpindiPage() {
     name: "Best Spa - Massage Center Rawalpindi",
     description:
       "Top certified massage center in Rawalpindi offering therapeutic full body, deep tissue, and Thai massage.",
-    telephone: "+923700802980",
+    telephone: "+923065656413",
     url: "https://bestsparawalpindi.com/massage-center-rawalpindi",
     address: {
       "@type": "PostalAddress",
@@ -108,10 +108,10 @@ export default function MassageCenterRawalpindiPage() {
               <Calendar className="h-5 w-5" /> Book Your Appointment
             </Link>
             <a
-              href="tel:+923700802980"
+              href="tel:+923065656413"
               className={cn(buttonVariants({ variant: "outline", size: "lg" }), "rounded-full font-bold gap-2 px-8")}
             >
-              <Phone className="h-5 w-5 text-emerald-600" /> Call: 0370 0802980
+              <Phone className="h-5 w-5 text-emerald-600" /> Call: 0306 5656413
             </a>
           </div>
         </div>
@@ -210,7 +210,7 @@ export default function MassageCenterRawalpindiPage() {
 
       <CTASection
         title="Book Your Rawalpindi Massage Session Today"
-        subtitle="Call +92 370 0802980 or message on WhatsApp to reserve your certified therapist in Bahria Town Phase 7."
+        subtitle="Call +92 306 5656413 or message on WhatsApp to reserve your certified therapist in Bahria Town Phase 7."
       />
       <MapSection />
       <SEOKeywords />

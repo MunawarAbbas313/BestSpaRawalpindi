@@ -5,7 +5,7 @@ import { Phone, MessageCircle, Calendar } from "lucide-react";
 
 export function MobileStickyCTA() {
   const whatsappUrl =
-    "https://wa.me/923700802980?text=" +
+    "https://wa.me/923065656413?text=" +
     encodeURIComponent("Hi! I would like to book an appointment at Best Spa Rawalpindi (Bahria Town Phase 7).");
 
   return (
@@ -15,8 +15,8 @@ export function MobileStickyCTA() {
     >
       <div className="grid grid-cols-3 gap-2">
         <a
-          href="tel:+923700802980"
-          aria-label="Call Best Spa Rawalpindi reception now at 0370 0802980"
+          href="tel:+923065656413"
+          aria-label="Call Best Spa Rawalpindi reception now at 0306 5656413"
           className="flex flex-col items-center justify-center py-2 px-1 rounded-xl bg-emerald-800 text-white font-semibold text-xs transition-transform active:scale-95 shadow-sm"
         >
           <Phone className="h-4 w-4 mb-0.5" />

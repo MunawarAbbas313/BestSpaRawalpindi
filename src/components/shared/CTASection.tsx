@@ -15,7 +15,7 @@ export function CTASection({
   subtitle = "Reserve your private sanctuary suite today with our certified wellness therapists. We are conveniently located in Bahria Town Phase 7, Rawalpindi.",
 }: CTASectionProps) {
   const whatsappUrl =
-    "https://wa.me/923700802980?text=" +
+    "https://wa.me/923065656413?text=" +
     encodeURIComponent("Hi! I would like to book a session at Best Spa Rawalpindi (Bahria Town Phase 7).");
 
   return (
@@ -51,14 +51,14 @@ export function CTASection({
           </Link>
 
           <a
-            href="tel:+923700802980"
-            aria-label="Call Best Spa Rawalpindi at 0370 0802980"
+            href="tel:+923065656413"
+            aria-label="Call Best Spa Rawalpindi at 0306 5656413"
             className={cn(
               buttonVariants({ variant: "outline", size: "lg" }),
               "bg-black/30 border-white/40 text-white hover:bg-black/50 font-bold h-14 px-8 text-base rounded-full backdrop-blur-md gap-2 w-full sm:w-auto"
             )}
           >
-            <Phone className="h-5 w-5 text-emerald-400" /> Call Now: 0370 0802980
+            <Phone className="h-5 w-5 text-emerald-400" /> Call Now: 0306 5656413
           </a>
 
           <a

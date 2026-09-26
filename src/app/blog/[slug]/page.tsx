@@ -168,10 +168,10 @@ export default async function BlogPostPage({
             </div>
             <div className="flex items-center gap-2 shrink-0">
               <a
-                href="tel:+923700802980"
+                href="tel:+923065656413"
                 className={cn(buttonVariants({ variant: "outline", size: "sm" }), "rounded-full gap-1 text-xs font-semibold")}
               >
-                <Phone className="h-3.5 w-3.5 text-emerald-600" /> 0370 0802980
+                <Phone className="h-3.5 w-3.5 text-emerald-600" /> 0306 5656413
               </a>
               <Link
                 href="/contact"

@@ -59,7 +59,7 @@ export default function NotFound() {
             <Home className="h-4 w-4" /> Return to Homepage
           </Link>
           <a
-            href="tel:+923700802980"
+            href="tel:+923065656413"
             className={cn(buttonVariants({ variant: "outline" }), "rounded-full gap-2 px-6")}
           >
             <Phone className="h-4 w-4 text-emerald-600" /> Call Reception

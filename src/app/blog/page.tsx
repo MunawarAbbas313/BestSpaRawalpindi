@@ -142,7 +142,7 @@ export default function BlogPage() {
 
       <CTASection
         title="Ready to Put Wellness Into Practice?"
-        subtitle="Schedule your session at Best Spa Rawalpindi in Bahria Town Phase 7 today. Call 0370 0802980."
+        subtitle="Schedule your session at Best Spa Rawalpindi in Bahria Town Phase 7 today. Call 0306 5656413."
       />
       <SEOKeywords />
     </div>

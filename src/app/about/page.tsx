@@ -77,7 +77,7 @@ export default function AboutPage() {
               <Calendar className="h-4 w-4" /> Book Appointment
             </Link>
             <a
-              href="tel:+923700802980"
+              href="tel:+923065656413"
               className={cn(buttonVariants({ variant: "outline" }), "rounded-full gap-2 px-6 font-semibold")}
             >
               <Phone className="h-4 w-4 text-emerald-600" /> Call: 03065656413

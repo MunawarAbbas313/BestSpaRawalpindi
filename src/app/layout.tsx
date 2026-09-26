@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     template: "%s | Best Spa Rawalpindi",
   },
   description:
-    "Rawalpindi's top-rated luxury spa & massage center in Bahria Town Phase 7. Certified therapists, private suites, Swedish, Thai, Deep Tissue, and Full Body Massage. Call +92 370 0802980.",
+    "Rawalpindi's top-rated luxury spa & massage center in Bahria Town Phase 7. Certified therapists, private suites, Swedish, Thai, Deep Tissue, and Full Body Massage. Call +92 306 5656413.",
   keywords: [
     "Best Spa Rawalpindi",
     "Massage Center Rawalpindi",
@@ -93,7 +93,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Best Spa Rawalpindi | Massage & Wellness Center",
     description:
-      "Premier spa & massage therapies in Bahria Town Phase 7, Rawalpindi. Call +92 370 0802980 to book.",
+      "Premier spa & massage therapies in Bahria Town Phase 7, Rawalpindi. Call +92 306 5656413 to book.",
   },
   icons: {
     icon: "/icon.png",
@@ -110,7 +110,7 @@ const localBusinessSchema = {
   image: "https://bestsparawalpindi.com/icon.png",
   description:
     "Top-rated luxury spa and massage center in Bahria Town Phase 7, Rawalpindi, offering Swedish, Thai, Deep Tissue, and Full Body Massage therapies.",
-  telephone: "+923700802980",
+  telephone: "+923065656413",
   priceRange: "PKR 3000 - PKR 12000",
   address: {
     "@type": "PostalAddress",
