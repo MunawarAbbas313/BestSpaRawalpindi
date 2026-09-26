@@ -138,7 +138,7 @@ export function Navbar() {
           {/* Mobile Toggle */}
           <div className="flex items-center gap-2 xl:hidden">
             <a
-              href="tel:+923700802980"
+              href="tel:+923065656413"
               className="p-1.5 text-primary sm:hidden"
               aria-label="Call Spa"
             >
