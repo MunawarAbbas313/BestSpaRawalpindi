@@ -8,7 +8,7 @@ import { MapPin, Navigation, Phone, MessageCircle, Clock, Car, Compass, ShieldCh
 import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = {
-  title: "Location & Driving Directions | Best Spa Bahria Town Phase 7 Rawalpindi",
+  title: "Location & Directions – Spa in Bahria Town Phase 7 Near Nando's",
   description:
     "Find Best Spa Rawalpindi in Bahria Town Phase 7 (near Nando's & Wallayat Complex). Driving directions from GT Road, DHA, and Islamabad. Dedicated parking.",
   alternates: {
@@ -160,7 +160,7 @@ export default function LocationPage() {
                   <Clock className="h-5 w-5 text-primary shrink-0 mt-0.5" />
                   <div>
                     <p className="font-semibold text-foreground">Working Hours:</p>
-                    <p>Monday – Sunday: 10:00 AM – 10:00 PM</p>
+                    <p>Mon–Fri: 10:00 AM – 4:40 AM • Sat & Sun: 24 Hours</p>
                   </div>
                 </div>
 

@@ -1,114 +1,62 @@
 import { MetadataRoute } from "next";
 import { blogPosts } from "@/lib/blog-data";
+import { SITE_LAST_UPDATED } from "@/lib/site-config";
+
+const baseUrl = "https://bestsparawalpindi.com";
+
+// Fixed lastModified dates: Google ignores lastmod when it changes on every request.
+// Bump SITE_LAST_UPDATED (src/lib/site-config.ts) whenever page content changes.
+const routes: { path: string; priority: number; changeFrequency: "weekly" | "monthly" | "yearly" }[] = [
+  { path: "", priority: 1.0, changeFrequency: "weekly" },
+  // Core location pages
+  { path: "/massage-center-rawalpindi", priority: 0.95, changeFrequency: "weekly" },
+  { path: "/massage-center-bahria-town-phase-7", priority: 0.95, changeFrequency: "weekly" },
+  { path: "/spa-bahria-town", priority: 0.9, changeFrequency: "weekly" },
+  { path: "/massage-bahria-town", priority: 0.9, changeFrequency: "weekly" },
+  { path: "/massage-near-islamabad", priority: 0.9, changeFrequency: "monthly" },
+  { path: "/spa-near-me", priority: 0.9, changeFrequency: "monthly" },
+  // Services
+  { path: "/services", priority: 0.9, changeFrequency: "weekly" },
+  { path: "/massage-prices-rawalpindi", priority: 0.9, changeFrequency: "monthly" },
+  { path: "/full-body-massage", priority: 0.9, changeFrequency: "monthly" },
+  { path: "/deep-tissue-massage-rawalpindi", priority: 0.85, changeFrequency: "monthly" },
+  { path: "/thai-massage-rawalpindi", priority: 0.85, changeFrequency: "monthly" },
+  { path: "/swedish-massage-rawalpindi", priority: 0.85, changeFrequency: "monthly" },
+  { path: "/aromatherapy-massage-rawalpindi", priority: 0.85, changeFrequency: "monthly" },
+  { path: "/hot-stone-massage-rawalpindi", priority: 0.85, changeFrequency: "monthly" },
+  { path: "/foot-reflexology-rawalpindi", priority: 0.85, changeFrequency: "monthly" },
+  { path: "/couples-massage-rawalpindi", priority: 0.85, changeFrequency: "monthly" },
+  { path: "/body-massage", priority: 0.85, changeFrequency: "monthly" },
+  { path: "/spa-services", priority: 0.85, changeFrequency: "monthly" },
+  // Info
+  { path: "/contact", priority: 0.85, changeFrequency: "monthly" },
+  { path: "/faq", priority: 0.8, changeFrequency: "monthly" },
+  { path: "/location", priority: 0.8, changeFrequency: "monthly" },
+  { path: "/why-choose-us", priority: 0.7, changeFrequency: "monthly" },
+  { path: "/about", priority: 0.7, changeFrequency: "monthly" },
+  { path: "/blog", priority: 0.7, changeFrequency: "weekly" },
+  { path: "/privacy-policy", priority: 0.2, changeFrequency: "yearly" },
+  // NOTE: /whatsapp is a redirect, so it must NOT be listed here ("Page with redirect" in Search Console).
+];
+
+function toIsoDate(value: string): string {
+  const d = new Date(value);
+  return isNaN(d.getTime()) ? SITE_LAST_UPDATED : d.toISOString().slice(0, 10);
+}
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://bestsparawalpindi.com";
-  const currentDate = new Date().toISOString();
-
-  const staticRoutes: MetadataRoute.Sitemap = [
-    {
-      url: `${baseUrl}`,
-      lastModified: currentDate,
-      changeFrequency: "daily",
-      priority: 1.0,
-    },
-    {
-      url: `${baseUrl}/massage-center-rawalpindi`,
-      lastModified: currentDate,
-      changeFrequency: "weekly",
-      priority: 0.95,
-    },
-    {
-      url: `${baseUrl}/spa-bahria-town`,
-      lastModified: currentDate,
-      changeFrequency: "weekly",
-      priority: 0.95,
-    },
-    {
-      url: `${baseUrl}/massage-bahria-town`,
-      lastModified: currentDate,
-      changeFrequency: "weekly",
-      priority: 0.95,
-    },
-    {
-      url: `${baseUrl}/massage-center-bahria-town-phase-7`,
-      lastModified: currentDate,
-      changeFrequency: "weekly",
-      priority: 0.95,
-    },
-    {
-      url: `${baseUrl}/full-body-massage`,
-      lastModified: currentDate,
-      changeFrequency: "weekly",
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/body-massage`,
-      lastModified: currentDate,
-      changeFrequency: "weekly",
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/spa-services`,
-      lastModified: currentDate,
-      changeFrequency: "weekly",
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/services`,
-      lastModified: currentDate,
-      changeFrequency: "weekly",
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/location`,
-      lastModified: currentDate,
-      changeFrequency: "weekly",
-      priority: 0.85,
-    },
-    {
-      url: `${baseUrl}/why-choose-us`,
-      lastModified: currentDate,
-      changeFrequency: "weekly",
-      priority: 0.85,
-    },
-    {
-      url: `${baseUrl}/contact`,
-      lastModified: currentDate,
-      changeFrequency: "weekly",
-      priority: 0.85,
-    },
-    {
-      url: `${baseUrl}/whatsapp`,
-      lastModified: currentDate,
-      changeFrequency: "weekly",
-      priority: 0.85,
-    },
-    {
-      url: `${baseUrl}/about`,
-      lastModified: currentDate,
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/blog`,
-      lastModified: currentDate,
-      changeFrequency: "daily",
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/privacy-policy`,
-      lastModified: currentDate,
-      changeFrequency: "yearly",
-      priority: 0.3,
-    },
-  ];
+  const staticRoutes: MetadataRoute.Sitemap = routes.map((r) => ({
+    url: `${baseUrl}${r.path}`,
+    lastModified: SITE_LAST_UPDATED,
+    changeFrequency: r.changeFrequency,
+    priority: r.priority,
+  }));
 
   const blogRoutes: MetadataRoute.Sitemap = blogPosts.map((post) => ({
     url: `${baseUrl}/blog/${post.slug}`,
-    lastModified: currentDate,
+    lastModified: toIsoDate(post.date),
     changeFrequency: "monthly",
-    priority: 0.75,
+    priority: 0.6,
   }));
 
   return [...staticRoutes, ...blogRoutes];

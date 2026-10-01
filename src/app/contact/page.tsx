@@ -7,12 +7,13 @@ import { SEOKeywords } from "@/components/shared/SEOKeywords";
 import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = {
-  title: "Contact Us & Book Appointment | Best Spa Rawalpindi Bahria Phase 7",
+  title: "Contact Number & Booking – Spa in Bahria Town Phase 7 (0306 5656413)",
   description:
-    "Contact Best Spa Rawalpindi in Bahria Town Phase 7 (near Nando's). Call +92 306 5656413 or message on WhatsApp to reserve your certified massage therapy session.",
+    "Best Spa Rawalpindi contact number: 0306 5656413 (call or WhatsApp). Book a massage in Bahria Town Phase 7 near Nando's – address, timings, email and directions. Same-day booking available.",
+  keywords: ["spa contact number Rawalpindi", "massage center phone number", "Best Spa Rawalpindi WhatsApp number", "spa booking Bahria Town", "book massage appointment Rawalpindi", "spa address Bahria Town Phase 7", "spa timings Rawalpindi"],
   alternates: {
-    canonical: "/contact",
-  },
+ canonical: "/contact",
+ },
 };
 
 const contactFaqs = [
@@ -83,10 +84,10 @@ export default function ContactPage() {
             We Are Here For You
           </span>
           <h1 className="text-4xl md:text-5xl font-bold font-playfair text-foreground">
-            Contact & Appointment Booking
-          </h1>
+            Contact Best Spa Rawalpindi – Call or WhatsApp 0306 5656413
+</h1>
           <p className="text-muted-foreground text-base">
-            Reserve your private therapy suite in <strong>Bahria Town Phase 7, Rawalpindi</strong>. Open 7 days a week from 10:00 AM to 10:00 PM.
+            Reserve your private therapy suite in <strong>Bahria Town Phase 7, Rawalpindi</strong>. Open Mon–Fri 10:00 AM – 4:40 AM and 24 hours on Saturday & Sunday.
           </p>
         </div>
 
@@ -160,7 +161,7 @@ export default function ContactPage() {
                   <div>
                     <p className="font-semibold text-white">Operating Hours</p>
                     <p className="text-stone-300">
-                      Monday – Sunday: 10:00 AM – 10:00 PM
+                      Mon–Fri: 10:00 AM – 4:40 AM • Sat & Sun: 24 Hours
                     </p>
                   </div>
                 </div>

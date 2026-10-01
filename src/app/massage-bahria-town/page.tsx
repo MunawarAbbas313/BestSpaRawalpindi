@@ -9,7 +9,7 @@ import { Phone, Calendar, ShieldCheck, Check, Sparkles, MapPin } from "lucide-re
 import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = {
-  title: "Professional Massage in Bahria Town Rawalpindi | Certified Therapists",
+  title: "Massage in Bahria Town Rawalpindi – Male & Female Therapists",
   description:
     "Looking for a professional massage in Bahria Town Rawalpindi? Certified therapists for Deep Tissue, Thai, Swedish, and Full Body Massage in Phase 7. Call +92 306 5656413.",
   alternates: {
@@ -68,8 +68,8 @@ export default function MassageBahriaTownPage() {
             <Sparkles className="h-3.5 w-3.5" /> Certified Bodywork Specialists
           </div>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-playfair text-foreground tracking-tight">
-            Massage Services in Bahria Town Rawalpindi
-          </h1>
+            Body Massage Services in Bahria Town Rawalpindi
+</h1>
           <p className="text-muted-foreground text-base md:text-lg max-w-2xl mx-auto leading-relaxed">
             Recharge your body and mind with authentic, therapeutic bodywork. Certified therapists, organic oils, and soundproof private suites in Bahria Town Phase 7.
           </p>

@@ -14,9 +14,9 @@ import { SEOKeywords } from "@/components/shared/SEOKeywords";
 import { CTASection } from "@/components/shared/CTASection";
 
 export const metadata: Metadata = {
-  title: "Best Spa & Massage Center in Bahria Town Rawalpindi",
+  title: { absolute: "Best Spa Rawalpindi | Spa & Massage Center in Bahria Town Phase 7 – 0306 5656413" },
   description:
-    "Top-rated luxury spa & massage center in Bahria Town Phase 7, Rawalpindi. Certified therapists, Swedish, Thai, Deep Tissue, and Full Body Massage. Call +92 306 5656413.",
+    "Best Spa Rawalpindi – luxury spa & massage center in Bahria Town Phase 7, near DHA Islamabad. Full body, Swedish, Thai, deep tissue & couples massage. Open late, 24h weekends. Call/WhatsApp 0306 5656413.",
   alternates: {
     canonical: "/",
   },
@@ -66,21 +66,21 @@ const featuredServices = [
   {
     title: "Deep Tissue Therapy",
     desc: "Intense, focused pressure targeting deeper muscle layers and chronic myofascial adhesions.",
-    href: "/services#deep-tissue",
+    href: "/deep-tissue-massage-rawalpindi",
     image: "https://images.unsplash.com/photo-1519823551278-64ac92734fb1?auto=format&fit=crop&w=720&q=75",
     duration: "60 Min",
   },
   {
     title: "Traditional Thai Massage",
     desc: "Energizing assisted yoga stretches and acupressure performed without oils for enhanced flexibility.",
-    href: "/services#thai",
+    href: "/thai-massage-rawalpindi",
     image: "https://images.unsplash.com/photo-1591343395082-e120087004b4?auto=format&fit=crop&w=720&q=75",
     duration: "60 / 90 Min",
   },
   {
     title: "Swedish Relaxation",
     desc: "Gentle rhythmic European strokes that improve blood circulation and dissolve daily mental tension.",
-    href: "/services#swedish",
+    href: "/swedish-massage-rawalpindi",
     image: "https://images.unsplash.com/photo-1600334129128-685c5582fd35?auto=format&fit=crop&w=720&q=75",
     duration: "60 Min",
   },
@@ -94,7 +94,7 @@ const featuredServices = [
   {
     title: "Couples Wellness Retreat",
     desc: "Relax side-by-side with your partner in our candlelit double suite with custom aromatherapies.",
-    href: "/services#couples",
+    href: "/couples-massage-rawalpindi",
     image: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=720&q=75",
     duration: "60 / 90 Min",
   },

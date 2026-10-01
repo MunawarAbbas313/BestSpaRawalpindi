@@ -7,7 +7,7 @@ import { ArrowRight, Calendar, Tag, Clock, BookOpen, Sparkles } from "lucide-rea
 import { blogPosts } from "@/lib/blog-data";
 
 export const metadata: Metadata = {
-  title: "Spa & Massage Wellness Blog Rawalpindi | Health Guides & Tips",
+  title: "Massage & Spa Blog – Wellness Guides and Tips from Rawalpindi",
   description:
     "Expert wellness articles on massage therapy benefits, Swedish vs Deep Tissue, stress relief, and self-care in Bahria Town Rawalpindi.",
   alternates: {
@@ -41,8 +41,8 @@ export default function BlogPage() {
             <span>Wellness Journal</span>
           </div>
           <h1 className="text-4xl md:text-5xl font-bold font-playfair tracking-tight">
-            Massage & Health Articles
-          </h1>
+            Spa & Massage Wellness Blog
+</h1>
           <p className="text-muted-foreground text-base md:text-lg leading-relaxed">
             Written by our certified wellness specialists at Best Spa Rawalpindi. Practical insights into bodywork, stress relief, and restorative living in the Twin Cities.
           </p>

@@ -9,7 +9,7 @@ import { Phone, Calendar, Sparkles, ShieldCheck, Check, Flower2, Clock, MapPin }
 import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = {
-  title: "Luxury Spa in Bahria Town Rawalpindi | Best Spa Wellness Sanctuary",
+  title: "Luxury Spa in Bahria Town Rawalpindi – Private Suites & Couples Spa",
   description:
     "Experience the premier luxury spa in Bahria Town Rawalpindi. Located in Phase 7 near Nando's. Certified therapists, private suites, and organic spa treatments. Call +92 306 5656413.",
   alternates: {
@@ -36,7 +36,7 @@ const faqs = [
   {
     question: "What are your operating hours in Bahria Town?",
     answer:
-      "We are open daily from 10:00 AM to 10:00 PM, Monday through Sunday.",
+      "We are open Monday to Friday from 10:00 AM to 4:40 AM, and 24 hours on Saturday and Sunday.",
   },
 ];
 

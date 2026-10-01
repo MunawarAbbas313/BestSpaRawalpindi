@@ -10,7 +10,7 @@ import { Clock, Tag, ArrowRight, ShieldCheck, Phone, MessageCircle } from "lucid
 import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = {
-  title: "Best Massage Services & Spa Menu in Rawalpindi | Best Spa",
+  title: "Massage Services & Spa Menu in Rawalpindi – Prices from PKR 3,500",
   description:
     "Explore full massage therapies and spa menu in Bahria Town Phase 7, Rawalpindi. Full body, Swedish, Thai, Deep Tissue, Hot Stone, and Couples packages. Call +92 306 5656413.",
   alternates: {
@@ -39,7 +39,7 @@ const services = [
       "Concentrated pressure applied across deep fascial layers and chronic trigger points. Highly effective for persistent lower back pain, stiff neck, and post-workout soreness.",
     benefits: "Dismantles myofascial knots, breaks scar tissue, restores joint mobility",
     image: "https://images.unsplash.com/photo-1519823551278-64ac92734fb1?auto=format&fit=crop&w=600&q=75",
-    href: "/services#deep-tissue",
+    href: "/deep-tissue-massage-rawalpindi",
   },
   {
     id: "thai",
@@ -50,7 +50,7 @@ const services = [
       "Dry, oil-free bodywork incorporating assisted yoga stretching, joint mobilizations, and rhythmic sen line acupressure. Clients remain comfortably clothed in loose attire.",
     benefits: "Dramatically improves spinal flexibility, posture, and natural energy flow",
     image: "https://images.unsplash.com/photo-1591343395082-e120087004b4?auto=format&fit=crop&w=600&q=75",
-    href: "/services#thai",
+    href: "/thai-massage-rawalpindi",
   },
   {
     id: "swedish",
@@ -61,7 +61,7 @@ const services = [
       "The classic European wellness standard. Uses long, flowing gliding strokes (effleurage) and gentle kneading to induce profound mental and physical calm.",
     benefits: "Relieves everyday anxiety, soothes fatigued nervous system, enhances lymph flow",
     image: "https://images.unsplash.com/photo-1600334129128-685c5582fd35?auto=format&fit=crop&w=600&q=75",
-    href: "/services#swedish",
+    href: "/swedish-massage-rawalpindi",
   },
   {
     id: "aromatherapy",
@@ -72,7 +72,7 @@ const services = [
       "Combines therapeutic Swedish massage with pure steam-distilled essential oils including French Lavender, Eucalyptus, and Sweet Orange chosen for your mood.",
     benefits: "Alleviates mental stress, clears respiratory pathways, deeply nourishes skin",
     image: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=600&q=75",
-    href: "/services#aromatherapy",
+    href: "/aromatherapy-massage-rawalpindi",
   },
   {
     id: "hot-stone",
@@ -83,7 +83,7 @@ const services = [
       "Smooth volcanic basalt stones are heated in water and strategically placed along energetic meridians while warm stones are used to massage tense muscles.",
     benefits: "Penetrates deep into tight fascia without painful pressure; melts stress",
     image: "https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=600&q=75",
-    href: "/services#hot-stone",
+    href: "/hot-stone-massage-rawalpindi",
   },
   {
     id: "reflexology",
@@ -94,7 +94,7 @@ const services = [
       "Targeted acupressure applied to reflex zones on the feet and lower legs corresponding to key internal organs and metabolic systems.",
     benefits: "Alleviates foot fatigue, improves blood circulation, supports organ vitality",
     image: "https://images.unsplash.com/photo-1519415387722-a1c3bbef716c?auto=format&fit=crop&w=600&q=75",
-    href: "/services#reflexology",
+    href: "/foot-reflexology-rawalpindi",
   },
   {
     id: "couples",
@@ -105,7 +105,7 @@ const services = [
       "Share an unforgettable relaxing experience with your partner in our private, candlelit double suite. Includes two Swedish or Aromatherapy massages.",
     benefits: "Synchronized relaxation, private suite, complimentary organic herbal tea",
     image: "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=600&q=75",
-    href: "/services#couples",
+    href: "/couples-massage-rawalpindi",
   },
 ];
 
@@ -173,8 +173,8 @@ export default function ServicesPage() {
             <Tag className="h-3.5 w-3.5" /> Transparent Pricing & Authentic Modalities
           </span>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-playfair text-foreground">
-            Complete Massage & Spa Menu in Rawalpindi
-          </h1>
+            Massage & Spa Services in Rawalpindi – Full Menu & Prices
+</h1>
           <p className="text-muted-foreground text-base md:text-lg max-w-2xl mx-auto leading-relaxed">
             Experience healing touch from certified wellness therapists in <strong>Bahria Town Phase 7</strong>. Transparent pricing in PKR with zero hidden charges.
           </p>

@@ -1,5 +1,3 @@
-"use client";
-
 import Link from "next/link";
 import Image from "next/image";
 import { buttonVariants } from "@/components/ui/button";
@@ -34,7 +32,7 @@ export function HomeHero() {
           </div>
 
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold font-playfair tracking-tight leading-[1.15] text-white">
-            Professional Spa & Massage Center in{" "}
+            Best Spa & Massage Center in{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-300 to-teal-200 italic">
               Bahria Town Rawalpindi
             </span>

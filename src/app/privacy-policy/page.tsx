@@ -1,5 +1,7 @@
 export const metadata = {
-    title: "Privacy Policy | Best Spa Rawalpindi",
+  title: "Privacy Policy",
+  description: "Privacy policy for Best Spa Rawalpindi, Bahria Town Phase 7 – how we handle booking and contact information.",
+  alternates: { canonical: "/privacy-policy" },
 };
 
 export default function PrivacyPolicy() {

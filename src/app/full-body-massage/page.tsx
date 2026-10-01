@@ -9,7 +9,7 @@ import { Phone, Calendar, ShieldCheck, Check, Sparkles, Heart, Clock, Award } fr
 import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = {
-  title: "Full Body Massage in Rawalpindi & Bahria Town | Best Spa Therapy",
+  title: "Full Body Massage in Rawalpindi & Islamabad – PKR 5,500 (60 Min)",
   description:
     "Experience the best full body massage in Rawalpindi & Bahria Town Phase 7. Certified therapists, organic botanical warm oils, private suites. 60/90 Min. Call +92 306 5656413.",
   alternates: {

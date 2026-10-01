@@ -9,7 +9,7 @@ import { Phone, Calendar, ShieldCheck, Check, MapPin, Clock, Award, Navigation }
 import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = {
-  title: "Massage Center in Bahria Town Phase 7 Rawalpindi | Best Spa (Near Nando's)",
+  title: "Massage Center in Bahria Town Phase 7 Rawalpindi (Near Nando's)",
   description:
     "Looking for a massage center in Bahria Town Phase 7, Rawalpindi? Best Spa is located near Nando's. Certified therapists, private suites, Swedish, Thai & Deep Tissue. Call +92 306 5656413.",
   alternates: {
@@ -36,7 +36,7 @@ const faqs = [
   {
     question: "What are your operating hours in Phase 7?",
     answer:
-      "We are open every day from 10:00 AM to 10:00 PM, including Saturdays and Sundays.",
+      "We are open Monday to Friday from 10:00 AM to 4:40 AM, and 24 hours on Saturdays and Sundays.",
   },
 ];
 
@@ -146,7 +146,7 @@ export default function MassageCenterPhase7Page() {
               </div>
               <div className="flex items-center gap-2">
                 <Check className="h-4 w-4 text-emerald-600 shrink-0" />
-                <span>Open 7 days a week from 10 AM to 10 PM</span>
+                <span>Mon–Fri 10 AM – 4:40 AM • Sat & Sun 24 hours</span>
               </div>
             </div>
           </div>

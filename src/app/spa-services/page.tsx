@@ -9,7 +9,7 @@ import { Phone, Calendar, ShieldCheck, Check, Sparkles, Tag, ArrowRight } from "
 import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = {
-  title: "Spa Services in Rawalpindi & Bahria Town | Luxury Wellness Packages",
+  title: "Spa Services in Rawalpindi & Bahria Town – Wellness Packages",
   description:
     "Explore luxury spa services in Bahria Town Phase 7, Rawalpindi. Full body massages, facial wellness, reflexology, and couple retreat packages. Call +92 306 5656413.",
   alternates: {

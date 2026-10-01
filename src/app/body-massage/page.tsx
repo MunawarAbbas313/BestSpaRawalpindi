@@ -9,7 +9,7 @@ import { Phone, Calendar, ShieldCheck, Check, Sparkles, Activity } from "lucide-
 import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = {
-  title: "Body Massage in Rawalpindi & Bahria Town | Therapeutic Bodywork",
+  title: "Body Massage in Rawalpindi – Therapeutic Massage for Pain & Stress",
   description:
     "Professional body massage therapies in Bahria Town Phase 7, Rawalpindi. Relieve muscle soreness, improve circulation, and de-stress with certified therapists. Call +92 306 5656413.",
   alternates: {

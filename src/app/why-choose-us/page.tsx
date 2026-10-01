@@ -9,7 +9,7 @@ import { ShieldCheck, Award, Heart, Sparkles, CheckCircle2, Phone, Calendar, Loc
 import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = {
-  title: "Why Choose Best Spa Rawalpindi | Certified Therapists & Hygiene Standards",
+  title: "Why Choose Us – Safe, Hygienic Spa with Certified Therapists",
   description:
     "Discover why Best Spa is Rawalpindi's #1 trusted massage and wellness destination. 100% certified therapists, hospital-grade sanitation, private luxury suites. Call +92 306 5656413.",
   alternates: {

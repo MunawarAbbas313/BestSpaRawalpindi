@@ -9,7 +9,7 @@ import { Phone, MessageCircle, Calendar, ShieldCheck, Check, Sparkles, MapPin, A
 import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = {
-  title: "Best Massage Center in Rawalpindi | Certified Therapists & Luxury Suites",
+  title: "Best Massage Center in Rawalpindi – Certified Therapists, Open Late",
   description:
     "Looking for the best massage center in Rawalpindi? Best Spa offers certified Swedish, Thai, Deep Tissue & Full Body Massage in Bahria Town Phase 7. Call +92 306 5656413.",
   alternates: {
@@ -94,8 +94,8 @@ export default function MassageCenterRawalpindiPage() {
             <Award className="h-3.5 w-3.5" /> Top Rated Wellness Destination
           </div>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-playfair text-foreground tracking-tight">
-            Premier Massage Center in Rawalpindi
-          </h1>
+            Best Massage Center in Rawalpindi
+</h1>
           <p className="text-muted-foreground text-base md:text-lg max-w-2xl mx-auto leading-relaxed">
             Experience restorative bodywork, certified therapist care, and hospital-grade hygiene at Rawalpindi&apos;s most trusted massage center. Located in Bahria Town Phase 7.
           </p>

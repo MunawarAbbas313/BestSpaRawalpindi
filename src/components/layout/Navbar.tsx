@@ -10,13 +10,15 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const navLinks = [
   { name: "Home", href: "/" },
-  { name: "All Services", href: "/services" },
+  { name: "Services", href: "/services" },
+  { name: "Prices", href: "/massage-prices-rawalpindi" },
   { name: "Full Body", href: "/full-body-massage" },
   { name: "Bahria Phase 7", href: "/massage-center-bahria-town-phase-7" },
   { name: "Rawalpindi Center", href: "/massage-center-rawalpindi" },
-  { name: "Why Us", href: "/why-choose-us" },
+  
   { name: "Location", href: "/location" },
   { name: "Blog", href: "/blog" },
+  { name: "FAQ", href: "/faq" },
   { name: "Contact", href: "/contact" },
 ];
 

@@ -31,7 +31,7 @@ export async function generateMetadata({
   }
 
   return {
-    title: `${post.title} | Best Spa Rawalpindi`,
+    title: post.title,
     description: post.excerpt,
     keywords: post.keywords,
     alternates: {
@@ -164,7 +164,7 @@ export default async function BlogPostPage({
           <div className="my-8 p-6 rounded-2xl bg-secondary/40 border border-border flex flex-col sm:flex-row items-center justify-between gap-4">
             <div>
               <p className="font-bold text-sm text-foreground">Need Massage Therapy in Bahria Town?</p>
-              <p className="text-xs text-muted-foreground">Certified therapists available daily 10 AM – 10 PM.</p>
+              <p className="text-xs text-muted-foreground">Open Mon–Fri 10 AM – 4:40 AM • Sat & Sun 24 hours.</p>
             </div>
             <div className="flex items-center gap-2 shrink-0">
               <a

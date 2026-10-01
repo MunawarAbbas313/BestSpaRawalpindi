@@ -24,42 +24,62 @@ const playfair = Playfair_Display({
 export const metadata: Metadata = {
   metadataBase: new URL("https://bestsparawalpindi.com"),
   title: {
-    default: "Best Spa Rawalpindi | Luxury Massage Center Bahria Town Phase 7",
+    default: "Best Spa Rawalpindi | Massage Center in Bahria Town Phase 7 – Call 0306 5656413",
     template: "%s | Best Spa Rawalpindi",
   },
   description:
-    "Rawalpindi's top-rated luxury spa & massage center in Bahria Town Phase 7. Certified therapists, private suites, Swedish, Thai, Deep Tissue, and Full Body Massage. Call +92 306 5656413.",
+    "Best Spa Rawalpindi – luxury spa & massage center in Bahria Town Phase 7, near DHA Islamabad. Full body, Swedish, Thai, deep tissue & couples massage by certified therapists. Open late, 24h weekends. Call/WhatsApp 0306 5656413.",
   keywords: [
+    // Brand & core
     "Best Spa Rawalpindi",
-    "Massage Center Rawalpindi",
-    "Spa Bahria Town",
-    "Massage Bahria Town Phase 7",
-    "Full Body Massage Rawalpindi",
-    "Body Massage",
-    "Thai Massage Rawalpindi",
-    "Deep Tissue Massage",
-    "Spa near me Rawalpindi",
-    "Massage center near me",
-    "Top spa near me",
-    "Safe spa Rawalpindi",
-    "Phase 7 massage",
-    "Spa in phase 7",
-    "Aura spa Rawalpindi alternative",
-    "Aura massage",
-    "Sukoon spa Bahria Town",
-    "Go glam spa alternative",
-    "Bella spa Bahria",
-    "Bahria spa",
-    "Bahria massage",
-    "PWD massage",
-    "DHA Islamabad massage",
-    "Spa open now",
-    "Late night massage Rawalpindi",
-    "24 hours massage Bahria Town",
+    "best spa in Rawalpindi",
+    "spa in Rawalpindi",
+    "massage center Rawalpindi",
+    "massage in Rawalpindi",
+    "spa Bahria Town",
+    "massage Bahria Town Phase 7",
+    "spa in Islamabad",
+    "massage center Islamabad",
+    "spa near DHA Islamabad",
+    // Generic "near me" & intent
+    "spa near me",
+    "massage near me",
+    "massage center near me",
+    "body massage near me",
+    "best spa near me",
+    "spa open now",
+    "24 hour spa Rawalpindi",
+    "late night massage Rawalpindi",
+    // Contact & booking
+    "spa contact number Rawalpindi",
+    "massage center contact number",
+    "spa phone number Bahria Town",
+    "spa WhatsApp number Rawalpindi",
+    "book massage appointment Rawalpindi",
+    "spa booking Islamabad",
+    // Services
+    "full body massage Rawalpindi",
+    "body massage Rawalpindi",
+    "deep tissue massage Rawalpindi",
+    "Thai massage Rawalpindi",
+    "Swedish massage Rawalpindi",
+    "aromatherapy massage",
+    "hot stone massage",
+    "foot massage Rawalpindi",
+    "couples massage Rawalpindi",
+    // Price
+    "massage price in Rawalpindi",
+    "spa rates Rawalpindi",
+    "spa deals Rawalpindi",
+    // Trust
+    "safe spa Rawalpindi",
+    "female therapist spa Rawalpindi",
+    "male spa Rawalpindi",
   ],
   authors: [{ name: "Best Spa Rawalpindi" }],
   creator: "Best Spa Rawalpindi",
   publisher: "Best Spa Rawalpindi",
+  category: "Health & Beauty",
   robots: {
     index: true,
     follow: true,
@@ -71,9 +91,8 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
-  alternates: {
-    canonical: "/",
-  },
+  // NOTE: no global canonical here — each page sets its own. A global "/" canonical
+  // would tell Google that pages without their own canonical are duplicates of the homepage.
   verification: {
     google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION || "",
     other: {
@@ -84,34 +103,41 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_PK",
     url: "https://bestsparawalpindi.com",
-    title: "Best Spa Rawalpindi | Luxury Massage & Wellness Center",
+    title: "Best Spa Rawalpindi | Massage Center in Bahria Town Phase 7",
     description:
-      "Premier spa & massage center located in Bahria Town Phase 7, Rawalpindi. Certified therapists, 100% private suites, and hygienic wellness treatments.",
+      "Luxury spa & massage center in Bahria Town Phase 7, Rawalpindi. Certified therapists, private suites, open late. Call/WhatsApp 0306 5656413.",
     siteName: "Best Spa Rawalpindi",
   },
   twitter: {
     card: "summary_large_image",
     title: "Best Spa Rawalpindi | Massage & Wellness Center",
-    description:
-      "Premier spa & massage therapies in Bahria Town Phase 7, Rawalpindi. Call +92 306 5656413 to book.",
+    description: "Spa & massage therapies in Bahria Town Phase 7, Rawalpindi. Call or WhatsApp 0306 5656413 to book.",
   },
   icons: {
     icon: "/icon.png",
     apple: "/icon.png",
+  },
+  other: {
+    "geo.region": "PK-PB",
+    "geo.placename": "Rawalpindi",
+    "geo.position": "33.54958;73.12232",
+    ICBM: "33.54958, 73.12232",
   },
 };
 
 const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "DaySpa",
+  "@id": "https://bestsparawalpindi.com/#business",
   name: "Best Spa Rawalpindi",
   url: "https://bestsparawalpindi.com",
   logo: "https://bestsparawalpindi.com/icon.png",
   image: "https://bestsparawalpindi.com/icon.png",
   description:
-    "Top-rated luxury spa and massage center in Bahria Town Phase 7, Rawalpindi, offering Swedish, Thai, Deep Tissue, and Full Body Massage therapies.",
+    "Luxury spa and massage center in Bahria Town Phase 7, Rawalpindi, offering Swedish, Thai, deep tissue, full body, aromatherapy, hot stone, foot reflexology and couples massage.",
   telephone: "+923065656413",
-  priceRange: "PKR 3000 - PKR 12000",
+  email: "info@bestsparawalpindi.com",
+  priceRange: "PKR 3500 - PKR 12000",
   address: {
     "@type": "PostalAddress",
     streetAddress: "Bahria Town Phase 7, Near Nando's & Wallayat Complex",
@@ -124,6 +150,14 @@ const localBusinessSchema = {
     "@type": "GeoCoordinates",
     latitude: 33.54958,
     longitude: 73.12232,
+  },
+  hasMap: "https://www.google.com/maps?q=33.54958,73.12232",
+  contactPoint: {
+    "@type": "ContactPoint",
+    telephone: "+923065656413",
+    contactType: "reservations",
+    areaServed: "PK",
+    availableLanguage: ["English", "Urdu"],
   },
   openingHoursSpecification: [
     {
@@ -147,38 +181,44 @@ const localBusinessSchema = {
     "Bahria Town Phase 8",
     "Bahria Town Phase 4",
     "DHA Islamabad",
+    "Islamabad",
     "Rawalpindi Cantt",
     "Saddar Rawalpindi",
     "PWD Rawalpindi",
   ],
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "https://bestsparawalpindi.com/#website",
+  name: "Best Spa Rawalpindi",
+  url: "https://bestsparawalpindi.com",
+  publisher: { "@id": "https://bestsparawalpindi.com/#business" },
+  inLanguage: "en-PK",
+};
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <link rel="preconnect" href="https://images.unsplash.com" crossOrigin="anonymous" />
-        <link rel="dns-prefetch" href="https://images.unsplash.com" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(localBusinessSchema),
           }}
         />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(websiteSchema),
+          }}
+        />
       </head>
       <body
         className={`${poppins.variable} ${playfair.variable} font-sans min-h-screen flex flex-col bg-background text-foreground antialiased selection:bg-primary/20 selection:text-primary`}
       >
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
           <Navbar />
           <main className="flex-grow pt-20">{children}</main>
           <Footer />

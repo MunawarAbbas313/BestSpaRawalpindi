@@ -73,6 +73,8 @@ export function Footer() {
               <li><Link href="/about" className="hover:text-emerald-300 transition-colors">About Us</Link></li>
               <li><Link href="/why-choose-us" className="hover:text-emerald-300 transition-colors">Why Choose Us</Link></li>
               <li><Link href="/location" className="hover:text-emerald-300 transition-colors">Location & Directions</Link></li>
+<li><Link href="/massage-prices-rawalpindi" className="hover:text-emerald-300 transition-colors">Massage Prices</Link></li>
+<li><Link href="/faq" className="hover:text-emerald-300 transition-colors">FAQ</Link></li>
               <li><Link href="/blog" className="hover:text-emerald-300 transition-colors">Wellness Journal</Link></li>
               <li><Link href="/contact" className="hover:text-emerald-300 transition-colors">Book Appointment</Link></li>
               <li><Link href="/privacy-policy" className="hover:text-emerald-300 transition-colors">Privacy Policy</Link></li>
@@ -81,15 +83,21 @@ export function Footer() {
 
           {/* Localized Landing Pages */}
           <div className="space-y-4">
-            <h3 className="text-white font-semibold text-sm tracking-wider uppercase">Local Areas</h3>
+            <h3 className="text-white font-semibold text-sm tracking-wider uppercase">Areas & Treatments</h3>
             <ul className="space-y-2.5 text-sm text-stone-300">
               <li><Link href="/massage-center-bahria-town-phase-7" className="hover:text-emerald-300 transition-colors">Bahria Town Phase 7</Link></li>
               <li><Link href="/spa-bahria-town" className="hover:text-emerald-300 transition-colors">Spa Bahria Town</Link></li>
               <li><Link href="/massage-bahria-town" className="hover:text-emerald-300 transition-colors">Massage Bahria Town</Link></li>
               <li><Link href="/massage-center-rawalpindi" className="hover:text-emerald-300 transition-colors">Massage Center Rawalpindi</Link></li>
+<li><Link href="/massage-near-islamabad" className="hover:text-emerald-300 transition-colors">Massage Near Islamabad & DHA</Link></li>
+<li><Link href="/spa-near-me" className="hover:text-emerald-300 transition-colors">Spa Near Me</Link></li>
               <li><Link href="/full-body-massage" className="hover:text-emerald-300 transition-colors">Full Body Massage</Link></li>
               <li><Link href="/body-massage" className="hover:text-emerald-300 transition-colors">Therapeutic Body Massage</Link></li>
-              <li><Link href="/spa-services" className="hover:text-emerald-300 transition-colors">Complete Services Menu</Link></li>
+              <li><Link href="/deep-tissue-massage-rawalpindi" className="hover:text-emerald-300 transition-colors">Deep Tissue Massage</Link></li>
+<li><Link href="/thai-massage-rawalpindi" className="hover:text-emerald-300 transition-colors">Thai Massage</Link></li>
+<li><Link href="/swedish-massage-rawalpindi" className="hover:text-emerald-300 transition-colors">Swedish Massage</Link></li>
+<li><Link href="/couples-massage-rawalpindi" className="hover:text-emerald-300 transition-colors">Couples Massage</Link></li>
+<li><Link href="/spa-services" className="hover:text-emerald-300 transition-colors">Complete Services Menu</Link></li>
             </ul>
           </div>
 

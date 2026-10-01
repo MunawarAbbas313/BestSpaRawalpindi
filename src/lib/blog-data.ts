@@ -183,7 +183,7 @@ export const blogPosts: BlogPost[] = [
       <h2>Mental Reset Between Work and Home</h2>
       <p>A 60-minute evening session acts as an intentional decompression buffer, halting racing thoughts and preventing work anxiety from disrupting your family life and evening sleep.</p>
 
-      <p>Our Bahria Town Phase 7 location is open daily until 10:00 PM. Unwind after your shift with our <a href="/body-massage">Body Massage therapies</a>.</p>
+      <p>Our Bahria Town Phase 7 location is open until 4:40 AM on weekdays and 24 hours on weekends. Unwind after your shift with our <a href="/body-massage">Body Massage therapies</a>.</p>
     `
   },
   {

@@ -8,9 +8,11 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: "*",
         allow: "/",
-        disallow: ["/api/", "/_next/"],
+        // Do NOT block /_next/ — Google needs the JS/CSS there to render pages.
+        disallow: ["/api/", "/whatsapp"],
       },
     ],
     sitemap: `${baseUrl}/sitemap.xml`,
+    host: baseUrl,
   };
 }

@@ -9,7 +9,7 @@ import { ShieldCheck, Sparkles, Heart, Award, CheckCircle2, Phone, Calendar } fr
 import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = {
-  title: "About Us | Luxury Wellness & Certified Massage Center Rawalpindi",
+  title: "About Us – Certified Massage Therapists in Bahria Town Rawalpindi",
   description:
     "Discover Best Spa Rawalpindi in Bahria Town Phase 7. Certified massage therapists, hospital-grade sanitation, private luxury suites, and organic therapies.",
   alternates: {
@@ -63,8 +63,8 @@ export default function AboutPage() {
             <Sparkles className="h-3.5 w-3.5" /> Our Story & Values
           </span>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-playfair text-foreground">
-            A Haven of Serenity & Healing in Bahria Town Rawalpindi
-          </h1>
+            About Best Spa Rawalpindi – Massage & Wellness in Bahria Town
+</h1>
           <p className="text-muted-foreground text-base md:text-lg max-w-2xl mx-auto leading-relaxed">
             Founded with a commitment to bring authentic, therapeutic bodywork and luxury spa care to the Twin Cities, Best Spa Rawalpindi is dedicated to restoring your physical balance and mental peace.
           </p>
