@@ -59,7 +59,7 @@ function related(selfSlug: string, extra: { label: string; href: string }[] = []
 const BOOKING_FAQ = {
   question: "How do I book, and what is your contact number?",
   answer:
-    "Call or WhatsApp our reception on 0306 5656413 (+92 306 5656413). Tell us the treatment, preferred time and whether you prefer a male or female therapist, and we will confirm your slot. We are open Monday to Friday 10:00 AM – 4:40 AM and 24 hours on Saturday and Sunday.",
+    "Call or WhatsApp our reception on 0306 5656413 (+92 306 5656413). Tell us the treatment, preferred time and whether you prefer a male or female therapist, and we will confirm your slot. We are open every day from 1:00 PM to 4:00 AM.",
 };
 
 export const landingPages: Record<string, LandingPageData> = {
@@ -599,9 +599,9 @@ export const landingPages: Record<string, LandingPageData> = {
         ],
       },
       {
-        heading: "Late-Night and Weekend Availability",
+        heading: "Late-Night Availability",
         paragraphs: [
-          "We stay open until 4:40 AM Monday to Friday and 24 hours on Saturday and Sunday, so you can book a massage after work, after a late flight into Islamabad International Airport, or whenever suits your schedule.",
+          "We stay open until 4:00 AM every night, so you can book a massage after work, after a late flight into Islamabad International Airport, or whenever suits your schedule.",
         ],
       },
       {
@@ -627,7 +627,7 @@ export const landingPages: Record<string, LandingPageData> = {
       },
       {
         question: "Are you open late for Islamabad clients?",
-        answer: "Yes — Monday to Friday until 4:40 AM and 24 hours on weekends.",
+        answer: "Yes — we are open every day from 1:00 PM until 4:00 AM.",
       },
       BOOKING_FAQ,
     ],
@@ -638,19 +638,18 @@ export const landingPages: Record<string, LandingPageData> = {
     slug: "spa-near-me",
     metaTitle: "Spa Near Me in Rawalpindi & Islamabad – Open Late",
     metaDescription:
-      "Searching 'spa near me' or 'massage near me' in Rawalpindi or Islamabad? Best Spa in Bahria Town Phase 7 is open late on weekdays and 24 hours on weekends. Call 0306 5656413.",
+      "Searching 'spa near me' or 'massage near me' in Rawalpindi or Islamabad? Best Spa in Bahria Town Phase 7 is open every day from 1 PM to 4 AM. Call 0306 5656413.",
     keywords: [
       "spa near me",
       "massage near me",
       "massage center near me",
       "spa open now",
-      "24 hour spa Rawalpindi",
       "late night massage Rawalpindi",
       "best spa near me Islamabad",
       "body massage near me",
     ],
     breadcrumb: "Spa Near Me",
-    eyebrow: "Open Late • 24h Weekends",
+    eyebrow: "Open Daily • 1 PM – 4 AM",
     h1: "Spa Near Me in Rawalpindi & Islamabad",
     intro:
       "If you are in Bahria Town, DHA, PWD, Rawalpindi or Islamabad and searching for a spa nearby, Best Spa Rawalpindi is a short drive away — and open when most spas are closed.",
@@ -662,7 +661,7 @@ export const landingPages: Record<string, LandingPageData> = {
         ],
         bullets: [
           "Central location in Bahria Town Phase 7, near Nando's and Wallayat Complex",
-          "Open Monday to Friday 10:00 AM – 4:40 AM, and 24 hours on weekends",
+          "Open every day from 1:00 PM to 4:00 AM",
           "Private suites with fresh linen for every client",
           "Certified male and female therapists",
           "Clear PKR prices and quick booking by phone or WhatsApp",
@@ -681,7 +680,7 @@ export const landingPages: Record<string, LandingPageData> = {
       {
         question: "Is there a spa open now near me in Rawalpindi?",
         answer:
-          "Best Spa Rawalpindi is open Monday to Friday from 10:00 AM to 4:40 AM and 24 hours on Saturday and Sunday. Call 0306 5656413 to check the next free slot.",
+          "Best Spa Rawalpindi is open every day from 1:00 PM to 4:00 AM. Call 0306 5656413 to check the next free slot.",
       },
       {
         question: "Where exactly are you located?",
