@@ -5,7 +5,7 @@ import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { ThemeProvider } from "@/components/theme-provider";
 import { WhatsAppWidget } from "@/components/shared/WhatsAppWidget";
-import { PromoBadge } from "@/components/shared/PromoBadge";
+import { GoogleAdsTag } from "@/components/analytics/GoogleAdsTag";
 import { MobileStickyCTA } from "@/components/shared/MobileStickyCTA";
 
 const poppins = Poppins({
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     template: "%s | Best Spa Rawalpindi",
   },
   description:
-    "Best Spa Rawalpindi – luxury spa & massage center in Bahria Town Phase 7, near DHA Islamabad. Full body, Swedish, Thai, deep tissue & couples massage by certified therapists. Open late, 24h weekends. Call/WhatsApp 0306 5656413.",
+    "Best Spa Rawalpindi – luxury spa & massage center in Bahria Town Phase 7, near DHA Islamabad. Full body, Swedish, Thai, deep tissue & couples massage by certified therapists. Open daily 1 PM – 4 AM. Call/WhatsApp 0306 5656413.",
   keywords: [
     // Brand & core
     "Best Spa Rawalpindi",
@@ -48,7 +48,6 @@ export const metadata: Metadata = {
     "body massage near me",
     "best spa near me",
     "spa open now",
-    "24 hour spa Rawalpindi",
     "late night massage Rawalpindi",
     // Contact & booking
     "spa contact number Rawalpindi",
@@ -162,15 +161,9 @@ const localBusinessSchema = {
   openingHoursSpecification: [
     {
       "@type": "OpeningHoursSpecification",
-      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-      opens: "10:00",
-      closes: "04:40",
-    },
-    {
-      "@type": "OpeningHoursSpecification",
-      dayOfWeek: ["Saturday", "Sunday"],
-      opens: "00:00",
-      closes: "23:59",
+      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+      opens: "13:00",
+      closes: "04:00",
     },
   ],
   currenciesAccepted: "PKR",
@@ -224,7 +217,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <Footer />
           <WhatsAppWidget />
           <MobileStickyCTA />
-          <PromoBadge />
+          <GoogleAdsTag />
         </ThemeProvider>
       </body>
     </html>
