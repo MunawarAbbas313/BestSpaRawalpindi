@@ -87,7 +87,7 @@ export default function ContactPage() {
             Contact Best Spa Rawalpindi – Call or WhatsApp 0306 5656413
 </h1>
           <p className="text-muted-foreground text-base">
-            Reserve your private therapy suite in <strong>Bahria Town Phase 7, Rawalpindi</strong>. Open Mon–Fri 10:00 AM – 4:40 AM and 24 hours on Saturday & Sunday.
+            Reserve your private therapy suite in <strong>Bahria Town Phase 7, Rawalpindi</strong>. Open every day from 1:00 PM to 4:00 AM.
           </p>
         </div>
 
@@ -161,7 +161,7 @@ export default function ContactPage() {
                   <div>
                     <p className="font-semibold text-white">Operating Hours</p>
                     <p className="text-stone-300">
-                      Mon–Fri: 10:00 AM – 4:40 AM • Sat & Sun: 24 Hours
+                      Open Daily: 1:00 PM – 4:00 AM
                     </p>
                   </div>
                 </div>

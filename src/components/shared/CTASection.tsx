@@ -27,7 +27,7 @@ export function CTASection({
       <div className="container px-4 md:px-6 mx-auto relative z-10 text-center max-w-4xl space-y-8">
         <div className="space-y-4">
           <span className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-emerald-500/20 text-emerald-300 text-xs font-semibold uppercase tracking-wider border border-emerald-400/30">
-            <Clock className="h-3.5 w-3.5" /> Mon–Fri: 10AM–4:40AM • Sat & Sun: 24 Hours Open
+            <Clock className="h-3.5 w-3.5" /> Open Daily: 1PM–4AM
           </span>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold font-playfair tracking-tight leading-tight">
             {title}

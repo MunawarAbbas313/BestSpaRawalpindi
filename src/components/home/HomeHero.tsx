@@ -52,7 +52,7 @@ export function HomeHero() {
             <MapPin className="h-4 w-4 text-emerald-400" /> Bahria Phase 7 (Near Nando&apos;s)
           </span>
           <span className="flex items-center gap-1.5 bg-black/40 backdrop-blur-md px-3.5 py-1.5 rounded-full border border-white/20 font-medium">
-            <Calendar className="h-4 w-4 text-emerald-400" /> Mon–Fri: 10AM–4:40AM • Sat–Sun: 24h
+            <Calendar className="h-4 w-4 text-emerald-400" /> Open Daily: 1PM–4AM
           </span>
         </div>
 

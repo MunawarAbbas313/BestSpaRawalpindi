@@ -14,7 +14,17 @@ export const SITE = {
   country: "PK",
   lat: 33.54958,
   lng: 73.12232,
-  hoursText: "Mon–Fri: 10:00 AM – 4:40 AM • Sat & Sun: Open 24 Hours",
+  hoursText: "Open Daily: 1:00 PM – 4:00 AM",
 } as const;
 
 export const SITE_LAST_UPDATED = "2026-10-01";
+
+// Google Ads conversion tracking (account "Best Spa in Rawalpindi").
+// Conversion actions were created in Google Ads > Goals > Conversions (category: Contact, count: One).
+export const GOOGLE_ADS = {
+  id: "AW-18451526011",
+  conversions: {
+    whatsappClick: "AW-18451526011/z5nWCPjcn58dEPvir95E", // "Website - WhatsApp click"
+    phoneClick: "AW-18451526011/aTvfCPvcn58dEPvir95E", // "Website - Phone call click"
+  },
+} as const;

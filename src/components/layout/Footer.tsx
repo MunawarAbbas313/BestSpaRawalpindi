@@ -24,7 +24,7 @@ export function Footer() {
               </span>
               <span>•</span>
               <span className="flex items-center gap-1">
-                <Clock className="h-4 w-4 text-emerald-500" /> Mon–Fri: 10AM–4:40AM • Sat–Sun: 24h
+                <Clock className="h-4 w-4 text-emerald-500" /> Open Daily: 1PM–4AM
               </span>
             </div>
             <div className="flex gap-4 pt-3">
@@ -136,7 +136,7 @@ export function Footer() {
               </li>
               <li className="flex items-start gap-3 text-xs text-stone-300 pt-1">
                 <Clock className="h-4 w-4 text-emerald-400 shrink-0 mt-0.5" />
-                <span>Mon–Fri: 10:00 AM – 4:40 AM<br /><strong className="text-emerald-400 font-semibold">Sat & Sun: 24 Hours Open</strong></span>
+                <span>Open Daily<br /><strong className="text-emerald-400 font-semibold">1:00 PM – 4:00 AM</strong></span>
               </li>
             </ul>
           </div>

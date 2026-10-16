@@ -16,7 +16,7 @@ import { CTASection } from "@/components/shared/CTASection";
 export const metadata: Metadata = {
   title: { absolute: "Best Spa Rawalpindi | Spa & Massage Center in Bahria Town Phase 7 – 0306 5656413" },
   description:
-    "Best Spa Rawalpindi – luxury spa & massage center in Bahria Town Phase 7, near DHA Islamabad. Full body, Swedish, Thai, deep tissue & couples massage. Open late, 24h weekends. Call/WhatsApp 0306 5656413.",
+    "Best Spa Rawalpindi – luxury spa & massage center in Bahria Town Phase 7, near DHA Islamabad. Full body, Swedish, Thai, deep tissue & couples massage. Open daily 1 PM – 4 AM. Call/WhatsApp 0306 5656413.",
   alternates: {
     canonical: "/",
   },
@@ -46,7 +46,7 @@ const homeFaqs = [
   {
     question: "What are your operating hours?",
     answer:
-      "We are open Monday through Friday from 10:00 AM to 4:40 AM (late-night sessions available), and open 24 Hours on Saturdays and Sundays.",
+      "We are open every day from 1:00 PM to 4:00 AM, so late-night sessions are available.",
   },
   {
     question: "What hygiene protocols do you follow?",

@@ -160,7 +160,7 @@ export default function LocationPage() {
                   <Clock className="h-5 w-5 text-primary shrink-0 mt-0.5" />
                   <div>
                     <p className="font-semibold text-foreground">Working Hours:</p>
-                    <p>Mon–Fri: 10:00 AM – 4:40 AM • Sat & Sun: 24 Hours</p>
+                    <p>Open Daily: 1:00 PM – 4:00 AM</p>
                   </div>
                 </div>
 

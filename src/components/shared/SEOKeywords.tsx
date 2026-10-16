@@ -88,7 +88,7 @@ export function SEOKeywords() {
           <div className="text-center pt-2 space-y-2">
             <p className="text-xs text-muted-foreground max-w-3xl mx-auto leading-relaxed flex items-center justify-center gap-1.5 flex-wrap">
               <Clock className="h-3.5 w-3.5 text-emerald-700" />
-              <span>Mon–Fri: 10 AM – 4:40 AM • Sat & Sun: 24 Hours • Call / WhatsApp: </span>
+              <span>Open Daily: 1 PM – 4 AM • Call / WhatsApp: </span>
               <a href="tel:+923065656413" className="font-semibold text-foreground hover:text-primary">
                 0306 5656413
               </a>

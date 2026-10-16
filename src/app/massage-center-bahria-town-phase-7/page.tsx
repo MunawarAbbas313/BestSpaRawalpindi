@@ -36,7 +36,7 @@ const faqs = [
   {
     question: "What are your operating hours in Phase 7?",
     answer:
-      "We are open Monday to Friday from 10:00 AM to 4:40 AM, and 24 hours on Saturdays and Sundays.",
+      "We are open every day from 1:00 PM to 4:00 AM.",
   },
 ];
 
@@ -61,7 +61,7 @@ export default function MassageCenterPhase7Page() {
       latitude: 33.54958,
       longitude: 73.12232,
     },
-    openingHours: "Mo-Su 10:00-22:00",
+    openingHours: "Mo-Su 13:00-04:00",
   };
 
   const faqSchema = {
@@ -146,7 +146,7 @@ export default function MassageCenterPhase7Page() {
               </div>
               <div className="flex items-center gap-2">
                 <Check className="h-4 w-4 text-emerald-600 shrink-0" />
-                <span>Mon–Fri 10 AM – 4:40 AM • Sat & Sun 24 hours</span>
+                <span>Open daily 1 PM – 4 AM</span>
               </div>
             </div>
           </div>
