@@ -57,7 +57,7 @@ export function MapSection() {
                     <Clock className="h-3.5 w-3.5 text-primary" /> Operating Hours
                   </div>
                   <p className="text-xs text-muted-foreground leading-relaxed">
-                    Mon–Fri: 10:00 AM – 4:40 AM • Sat & Sun: 24 Hours Open
+                    Open Daily: 1:00 PM – 4:00 AM
                   </p>
                 </div>
               </div>
