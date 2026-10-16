@@ -47,7 +47,7 @@ export function Navbar() {
           <div className="flex items-center gap-2">
             <Clock className="h-3 w-3 text-emerald-400 shrink-0" />
             <span>
-              <strong className="text-white">Timings:</strong> Mon–Fri: 10:00 AM – 4:40 AM • <strong className="text-emerald-400">Sat & Sun: 24 Hours Open</strong>
+              <strong className="text-white">Timings:</strong> Open Daily • <strong className="text-emerald-400">1:00 PM – 4:00 AM</strong>
             </span>
           </div>
           <div className="flex items-center gap-3">
@@ -185,7 +185,7 @@ export function Navbar() {
               <div className="pt-3 mt-2 border-t border-border/60 flex flex-col gap-2">
                 <div className="text-xs text-muted-foreground bg-muted/40 p-2.5 rounded-lg flex items-center gap-1.5">
                   <Clock className="h-3.5 w-3.5 text-emerald-600 shrink-0" />
-                  <span>Mon–Fri: 10AM–4:40AM | Sat & Sun: 24 Hours</span>
+                  <span>Open Daily: 1PM–4AM</span>
                 </div>
                 <a
                   href="https://wa.me/923065656413?text=Hi!+I+would+like+to+book+an+appointment+at+Best+Spa+Rawalpindi."
