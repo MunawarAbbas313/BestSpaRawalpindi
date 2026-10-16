@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     "spa contact number Rawalpindi",
     "massage booking Rawalpindi",
     "female therapist spa Rawalpindi",
-    "spa open 24 hours Rawalpindi",
+    "late night spa Rawalpindi",
   ],
   alternates: { canonical: "/faq" },
 };
@@ -50,7 +50,7 @@ const groups: { heading: string; items: { question: string; answer: string }[] }
     items: [
       {
         question: "What are your opening hours?",
-        answer: "Monday to Friday 10:00 AM – 4:40 AM, and open 24 hours on Saturday and Sunday.",
+        answer: "We are open every day from 1:00 PM to 4:00 AM.",
       },
       {
         question: "Where are you located?",
