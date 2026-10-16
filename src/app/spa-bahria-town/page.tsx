@@ -36,7 +36,7 @@ const faqs = [
   {
     question: "What are your operating hours in Bahria Town?",
     answer:
-      "We are open Monday to Friday from 10:00 AM to 4:40 AM, and 24 hours on Saturday and Sunday.",
+      "We are open every day from 1:00 PM to 4:00 AM.",
   },
 ];
 
