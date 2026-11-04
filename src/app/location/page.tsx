@@ -7,14 +7,16 @@ import { CTASection } from "@/components/shared/CTASection";
 import { MapPin, Navigation, Phone, MessageCircle, Clock, Car, Compass, ShieldCheck } from "lucide-react";
 import { cn } from "@/lib/utils";
 
-export const metadata: Metadata = {
-  title: "Location & Directions – Spa in Bahria Town Phase 7 Near Nando's",
+import { withSeo } from "@/lib/seo";
+import { Branches } from "@/components/shared/Branches";
+export const metadata: Metadata = withSeo({
+  title: "Location – Bahria Town Phase 7",
   description:
-    "Find Best Spa Rawalpindi in Bahria Town Phase 7 (near Nando's & Wallayat Complex). Driving directions from GT Road, DHA, and Islamabad. Dedicated parking.",
+    "Find Best Spa Rawalpindi in Bahria Town Phase 7 near Nando's & Wallayat Complex. Map, parking and directions from Rawalpindi, DHA and Islamabad.",
   alternates: {
     canonical: "/location",
   },
-};
+});
 
 const drivingRoutes = [
   {
@@ -240,6 +242,7 @@ export default function LocationPage() {
         title="Visit Best Spa in Bahria Town Phase 7"
         subtitle="Call 0306 5656413 or message on WhatsApp for instant assistance."
       />
+      <Branches />
       <SEOKeywords />
     </div>
   );

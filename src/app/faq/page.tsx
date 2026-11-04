@@ -7,10 +7,11 @@ import { MapSection } from "@/components/shared/MapSection";
 import { SEOKeywords } from "@/components/shared/SEOKeywords";
 import { SITE } from "@/lib/site-config";
 
-export const metadata: Metadata = {
-  title: "Spa & Massage FAQs – Timings, Prices, Booking & Contact",
+import { withSeo } from "@/lib/seo";
+export const metadata: Metadata = withSeo({
+  title: "Spa FAQs – Prices, Timings & Booking",
   description:
-    "Answers to common questions about Best Spa Rawalpindi: contact number, timings, massage prices, male/female therapists, hygiene, parking and how to book in Bahria Town Phase 7.",
+    "Answers about Best Spa Rawalpindi: contact number, timings, massage prices, male/female therapists, hygiene, parking and booking in Phase 7.",
   keywords: [
     "spa FAQ Rawalpindi",
     "spa timings Rawalpindi",
@@ -20,7 +21,7 @@ export const metadata: Metadata = {
     "late night spa Rawalpindi",
   ],
   alternates: { canonical: "/faq" },
-};
+});
 
 const groups: { heading: string; items: { question: string; answer: string }[] }[] = [
   {

@@ -1,143 +1,133 @@
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+/* Class-based dark variant (next-themes) – site is locked to light theme. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/*
+ * Design tokens registered with Tailwind v4 so that utilities such as
+ * bg-primary/10, border-border, text-muted-foreground, ring-primary/30 are
+ * real, opacity-aware classes (previously they were hand-written, unlayered
+ * classes that broke opacity modifiers and overrode Tailwind utilities).
+ */
+/* `inline` so font-sans resolves next/font's --font-poppins on <body>. */
+@theme inline {
+  --font-sans: var(--font-poppins), ui-sans-serif, system-ui, sans-serif;
+}
 
 @theme {
-  --font-poppins: 'Poppins', sans-serif;
-  --font-playfair: 'Playfair Display', serif;
-}
+  --font-poppins: "Poppins", ui-sans-serif, system-ui, sans-serif;
+  --font-playfair: "Playfair Display", ui-serif, Georgia, serif;
 
-:root {
-  /* Romantic Theme Variables */
+  --color-background: rgb(255 248 251);
+  --color-foreground: rgb(76 22 46);
 
-  /* Gradient Start */
-  --background: 255 240 245;
+  --color-primary: rgb(190 24 93);
+  --color-primary-foreground: rgb(255 255 255);
 
-  /* Text */
-  --foreground: 88 28 55;
-  /* Deep Burgundy */
+  --color-secondary: rgb(253 232 241);
+  --color-secondary-foreground: rgb(131 24 67);
 
-  /* Primary Pink */
-  --primary: 219 39 119;
-  /* Pink-600 */
-  --primary-foreground: 255 255 255;
+  --color-muted: rgb(252 236 244);
+  --color-muted-foreground: rgb(120 53 85);
 
-  --muted: 252 231 243;
-  --muted-foreground: 157 23 77;
+  --color-card: rgb(255 255 255 / 0.82);
+  --color-card-foreground: rgb(76 22 46);
 
-  /* Semi-transparent White for Cards -> Glassmorphism Base */
-  --card: 255 255 255;
-  --card-foreground: 88 28 55;
+  --color-border: rgb(249 205 226);
+  --color-input: rgb(244 114 182);
+  --color-ring: rgb(236 72 153);
 
-  --border: 249 168 212;
-  /* Pink-300 */
+  --shadow-soft: 0 1px 2px rgb(136 19 55 / 0.04), 0 8px 24px -8px rgb(136 19 55 / 0.12);
+  --shadow-lift: 0 2px 4px rgb(136 19 55 / 0.05), 0 22px 44px -16px rgb(136 19 55 / 0.28);
 
-  --secondary: 253 226 237;
-  --secondary-foreground: 131 24 67;
+  --animate-marquee: marquee 60s linear infinite;
+  --animate-pulse-slow: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  --animate-spin-slow: spin 3s linear infinite;
 
-  --input: 244 114 182;
-  --ring: 236 72 153;
-}
-
-/* Base styles */
-body {
-  /* Romantic Background Mix */
-  background-color: rgb(var(--background));
-  background-image:
-    radial-gradient(circle at 0% 0%, rgba(254, 226, 226, 0.4) 0%, transparent 50%),
-    radial-gradient(circle at 100% 100%, rgba(249, 168, 212, 0.4) 0%, transparent 50%),
-    linear-gradient(120deg, #fff0f5 0%, #fff 40%, #ffe4e6 100%);
-  background-attachment: fixed;
-  background-size: cover;
-
-  color: rgb(var(--foreground));
-  font-family: var(--font-poppins);
-  min-height: 100vh;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: var(--font-playfair);
-  color: #881337;
-  /* Rose-900 */
-}
-
-/* Utilities */
-.bg-background {
-  background-color: transparent;
-}
-
-.text-foreground {
-  color: rgb(var(--foreground));
-}
-
-.bg-primary {
-  background-color: rgb(var(--primary));
-}
-
-.text-primary {
-  color: rgb(var(--primary));
-}
-
-.text-primary-foreground {
-  color: rgb(var(--primary-foreground));
-}
-
-.bg-muted {
-  background-color: rgb(var(--muted));
-}
-
-.text-muted-foreground {
-  color: rgb(var(--muted-foreground));
-}
-
-/* Card - Glass Effect Default */
-.bg-card {
-  background-color: rgba(255, 255, 255, 0.6);
-  backdrop-filter: blur(10px);
-}
-
-.text-card-foreground {
-  color: rgb(var(--card-foreground));
-}
-
-.border-border {
-  border-color: rgb(var(--border));
-}
-
-.border-input {
-  border-color: rgb(var(--input));
-}
-
-.bg-secondary {
-  background-color: rgb(var(--secondary));
-}
-
-.text-secondary-foreground {
-  color: rgb(var(--secondary-foreground));
-}
-
-/* Animations */
-@keyframes marquee {
-  0% {
-    transform: translateX(0);
-  }
-
-  100% {
-    transform: translateX(-50%);
+  @keyframes marquee {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
   }
 }
 
-.animate-marquee {
-  animation: marquee 60s linear infinite;
+@layer base {
+  :root {
+    color-scheme: light;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-background);
+    background-image:
+      radial-gradient(circle at 0% 0%, rgba(254, 226, 226, 0.45) 0%, transparent 50%),
+      radial-gradient(circle at 100% 100%, rgba(249, 168, 212, 0.35) 0%, transparent 50%),
+      linear-gradient(120deg, #fff5f8 0%, #ffffff 45%, #ffeef2 100%);
+    background-attachment: fixed;
+    color: var(--color-foreground);
+    font-family: var(--font-poppins);
+    min-height: 100vh;
+    text-rendering: optimizeLegibility;
+  }
+
+  /*
+   * Headings inherit their colour: dark-rose on light sections (body colour)
+   * and white inside dark hero/CTA sections that set text-white. Previously an
+   * unlayered `color: #881337` forced dark-rose headings onto dark images,
+   * making hero and CTA headlines almost unreadable.
+   */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-playfair);
+    color: inherit;
+    text-wrap: balance;
+    letter-spacing: -0.01em;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-ring);
+    outline-offset: 2px;
+  }
 }
 
-.animate-pulse-slow {
-  animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+/* Glass card: translucent white + blur on top of the blush gradient. */
+@utility glass {
+  background-color: rgb(255 255 255 / 0.72);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
 }
 
-.animate-spin-slow {
-  animation: spin 3s linear infinite;
+/* Hairline gradient frame used on featured cards. */
+@utility card-frame {
+  border: 1px solid transparent;
+  background:
+    linear-gradient(rgb(255 255 255 / 0.92), rgb(255 255 255 / 0.92)) padding-box,
+    linear-gradient(135deg, rgb(251 207 232), rgb(253 164 175) 45%, rgb(252 211 77 / 0.7)) border-box;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
 }

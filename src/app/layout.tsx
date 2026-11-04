@@ -7,6 +7,8 @@ import { ThemeProvider } from "@/components/theme-provider";
 import { WhatsAppWidget } from "@/components/shared/WhatsAppWidget";
 import { GoogleAdsTag } from "@/components/analytics/GoogleAdsTag";
 import { MobileStickyCTA } from "@/components/shared/MobileStickyCTA";
+import { SITE } from "@/lib/site-config";
+import { BRANCHES, OG_IMAGE, SOCIAL_LINKS } from "@/lib/seo";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -21,63 +23,44 @@ const playfair = Playfair_Display({
   display: "swap",
 });
 
+const DEFAULT_TITLE = "Best Spa Rawalpindi | Massage Center Bahria Town";
+const DEFAULT_DESCRIPTION =
+  "Spa & massage center in Bahria Town Phase 7, Rawalpindi. Full body, Swedish, Thai, deep tissue & couples massage. Open 1 PM – 4 AM. Call 0306 5656413.";
+
 export const metadata: Metadata = {
-  metadataBase: new URL("https://bestsparawalpindi.com"),
+  metadataBase: new URL(SITE.url),
   title: {
-    default: "Best Spa Rawalpindi | Massage Center in Bahria Town Phase 7 – Call 0306 5656413",
+    default: DEFAULT_TITLE,
     template: "%s | Best Spa Rawalpindi",
   },
-  description:
-    "Best Spa Rawalpindi – luxury spa & massage center in Bahria Town Phase 7, near DHA Islamabad. Full body, Swedish, Thai, deep tissue & couples massage by certified therapists. Open daily 1 PM – 4 AM. Call/WhatsApp 0306 5656413.",
+  description: DEFAULT_DESCRIPTION,
   keywords: [
-    // Brand & core
     "Best Spa Rawalpindi",
     "best spa in Rawalpindi",
     "spa in Rawalpindi",
     "massage center Rawalpindi",
-    "massage in Rawalpindi",
     "spa Bahria Town",
     "massage Bahria Town Phase 7",
+    "spa Bahria Town Phase 4",
+    "massage center Bahria Town Phase 4",
     "spa in Islamabad",
     "massage center Islamabad",
     "spa near DHA Islamabad",
-    // Generic "near me" & intent
     "spa near me",
     "massage near me",
-    "massage center near me",
-    "body massage near me",
-    "best spa near me",
     "spa open now",
     "late night massage Rawalpindi",
-    // Contact & booking
     "spa contact number Rawalpindi",
-    "massage center contact number",
-    "spa phone number Bahria Town",
-    "spa WhatsApp number Rawalpindi",
-    "book massage appointment Rawalpindi",
-    "spa booking Islamabad",
-    // Services
     "full body massage Rawalpindi",
-    "body massage Rawalpindi",
     "deep tissue massage Rawalpindi",
     "Thai massage Rawalpindi",
     "Swedish massage Rawalpindi",
-    "aromatherapy massage",
-    "hot stone massage",
-    "foot massage Rawalpindi",
     "couples massage Rawalpindi",
-    // Price
     "massage price in Rawalpindi",
-    "spa rates Rawalpindi",
-    "spa deals Rawalpindi",
-    // Trust
-    "safe spa Rawalpindi",
-    "female therapist spa Rawalpindi",
-    "male spa Rawalpindi",
   ],
-  authors: [{ name: "Best Spa Rawalpindi" }],
-  creator: "Best Spa Rawalpindi",
-  publisher: "Best Spa Rawalpindi",
+  authors: [{ name: SITE.name }],
+  creator: SITE.name,
+  publisher: SITE.name,
   category: "Health & Beauty",
   robots: {
     index: true,
@@ -90,8 +73,7 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
-  // NOTE: no global canonical here — each page sets its own. A global "/" canonical
-  // would tell Google that pages without their own canonical are duplicates of the homepage.
+  // No global canonical – every page sets its own via withSeo().
   verification: {
     google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION || "",
     other: {
@@ -101,16 +83,17 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_PK",
-    url: "https://bestsparawalpindi.com",
-    title: "Best Spa Rawalpindi | Massage Center in Bahria Town Phase 7",
-    description:
-      "Luxury spa & massage center in Bahria Town Phase 7, Rawalpindi. Certified therapists, private suites, open late. Call/WhatsApp 0306 5656413.",
-    siteName: "Best Spa Rawalpindi",
+    url: SITE.url,
+    title: DEFAULT_TITLE,
+    description: DEFAULT_DESCRIPTION,
+    siteName: SITE.name,
+    images: [OG_IMAGE],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Best Spa Rawalpindi | Massage & Wellness Center",
-    description: "Spa & massage therapies in Bahria Town Phase 7, Rawalpindi. Call or WhatsApp 0306 5656413 to book.",
+    title: DEFAULT_TITLE,
+    description: DEFAULT_DESCRIPTION,
+    images: [OG_IMAGE.url],
   },
   icons: {
     icon: "/icon.png",
@@ -119,45 +102,82 @@ export const metadata: Metadata = {
   other: {
     "geo.region": "PK-PB",
     "geo.placename": "Rawalpindi",
-    "geo.position": "33.54958;73.12232",
-    ICBM: "33.54958, 73.12232",
+    "geo.position": `${SITE.lat};${SITE.lng}`,
+    ICBM: `${SITE.lat}, ${SITE.lng}`,
   },
+};
+
+const sameAs = [
+  ...SOCIAL_LINKS.map((s) => s.href),
+  ...BRANCHES.filter((b) => !b.current).map((b) => b.href),
+];
+
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": `${SITE.url}/#organization`,
+  name: SITE.name,
+  alternateName: "Rene Spa Rawalpindi",
+  url: SITE.url,
+  logo: {
+    "@type": "ImageObject",
+    url: `${SITE.url}/icon.png`,
+    width: 512,
+    height: 512,
+  },
+  image: `${SITE.url}${OG_IMAGE.url}`,
+  description:
+    "Best Spa Rawalpindi is a spa and massage center in Bahria Town Phase 7 and Phase 4, Rawalpindi, part of the Rene Spa network.",
+  email: SITE.email,
+  telephone: SITE.phone,
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: SITE.street,
+    addressLocality: SITE.locality,
+    addressRegion: SITE.region,
+    postalCode: SITE.postalCode,
+    addressCountry: SITE.country,
+  },
+  contactPoint: [
+    {
+      "@type": "ContactPoint",
+      telephone: SITE.phone,
+      contactType: "reservations",
+      areaServed: "PK",
+      availableLanguage: ["English", "Urdu"],
+    },
+  ],
+  sameAs,
 };
 
 const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "DaySpa",
-  "@id": "https://bestsparawalpindi.com/#business",
-  name: "Best Spa Rawalpindi",
-  url: "https://bestsparawalpindi.com",
-  logo: "https://bestsparawalpindi.com/icon.png",
-  image: "https://bestsparawalpindi.com/icon.png",
+  "@id": `${SITE.url}/#business`,
+  name: SITE.name,
+  url: SITE.url,
+  logo: `${SITE.url}/icon.png`,
+  image: `${SITE.url}${OG_IMAGE.url}`,
+  parentOrganization: { "@id": `${SITE.url}/#organization` },
   description:
     "Luxury spa and massage center in Bahria Town Phase 7, Rawalpindi, offering Swedish, Thai, deep tissue, full body, aromatherapy, hot stone, foot reflexology and couples massage.",
-  telephone: "+923065656413",
-  email: "info@bestsparawalpindi.com",
+  telephone: SITE.phone,
+  email: SITE.email,
   priceRange: "PKR 3500 - PKR 12000",
   address: {
     "@type": "PostalAddress",
-    streetAddress: "Bahria Town Phase 7, Near Nando's & Wallayat Complex",
-    addressLocality: "Rawalpindi",
-    addressRegion: "Punjab",
-    postalCode: "46000",
-    addressCountry: "PK",
+    streetAddress: SITE.street,
+    addressLocality: SITE.locality,
+    addressRegion: SITE.region,
+    postalCode: SITE.postalCode,
+    addressCountry: SITE.country,
   },
   geo: {
     "@type": "GeoCoordinates",
-    latitude: 33.54958,
-    longitude: 73.12232,
+    latitude: SITE.lat,
+    longitude: SITE.lng,
   },
-  hasMap: "https://www.google.com/maps?q=33.54958,73.12232",
-  contactPoint: {
-    "@type": "ContactPoint",
-    telephone: "+923065656413",
-    contactType: "reservations",
-    areaServed: "PK",
-    availableLanguage: ["English", "Urdu"],
-  },
+  hasMap: `https://www.google.com/maps?q=${SITE.lat},${SITE.lng}`,
   openingHoursSpecification: [
     {
       "@type": "OpeningHoursSpecification",
@@ -171,23 +191,24 @@ const localBusinessSchema = {
   areaServed: [
     "Bahria Town Rawalpindi",
     "Bahria Town Phase 7",
-    "Bahria Town Phase 8",
     "Bahria Town Phase 4",
+    "Bahria Town Phase 8",
     "DHA Islamabad",
     "Islamabad",
     "Rawalpindi Cantt",
     "Saddar Rawalpindi",
     "PWD Rawalpindi",
   ],
+  sameAs,
 };
 
 const websiteSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
-  "@id": "https://bestsparawalpindi.com/#website",
-  name: "Best Spa Rawalpindi",
-  url: "https://bestsparawalpindi.com",
-  publisher: { "@id": "https://bestsparawalpindi.com/#business" },
+  "@id": `${SITE.url}/#website`,
+  name: SITE.name,
+  url: SITE.url,
+  publisher: { "@id": `${SITE.url}/#organization` },
   inLanguage: "en-PK",
 };
 
@@ -198,20 +219,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify(localBusinessSchema),
-          }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(websiteSchema),
+            __html: JSON.stringify([organizationSchema, localBusinessSchema, websiteSchema]),
           }}
         />
       </head>
       <body
         className={`${poppins.variable} ${playfair.variable} font-sans min-h-screen flex flex-col bg-background text-foreground antialiased selection:bg-primary/20 selection:text-primary`}
       >
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
+        <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false} disableTransitionOnChange>
           <Navbar />
           <main className="flex-grow pt-20">{children}</main>
           <Footer />

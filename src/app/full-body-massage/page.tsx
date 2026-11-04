@@ -8,14 +8,15 @@ import { CTASection } from "@/components/shared/CTASection";
 import { Phone, Calendar, ShieldCheck, Check, Sparkles, Heart, Clock, Award } from "lucide-react";
 import { cn } from "@/lib/utils";
 
-export const metadata: Metadata = {
-  title: "Full Body Massage in Rawalpindi & Islamabad – PKR 5,500 (60 Min)",
+import { withSeo } from "@/lib/seo";
+export const metadata: Metadata = withSeo({
+  title: "Full Body Massage in Rawalpindi",
   description:
-    "Experience the best full body massage in Rawalpindi & Bahria Town Phase 7. Certified therapists, organic botanical warm oils, private suites. 60/90 Min. Call +92 306 5656413.",
+    "Full body massage in Rawalpindi & Bahria Town Phase 7 with warm botanical oils and private suites. 60 min PKR 5,500. Call +92 306 5656413.",
   alternates: {
     canonical: "/full-body-massage",
   },
-};
+});
 
 const faqs = [
   {

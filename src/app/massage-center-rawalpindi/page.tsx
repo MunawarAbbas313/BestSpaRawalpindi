@@ -8,14 +8,15 @@ import { CTASection } from "@/components/shared/CTASection";
 import { Phone, MessageCircle, Calendar, ShieldCheck, Check, Sparkles, MapPin, Award } from "lucide-react";
 import { cn } from "@/lib/utils";
 
-export const metadata: Metadata = {
-  title: "Best Massage Center in Rawalpindi – Certified Therapists, Open Late",
+import { withSeo } from "@/lib/seo";
+export const metadata: Metadata = withSeo({
+  title: "Best Massage Center in Rawalpindi",
   description:
-    "Looking for the best massage center in Rawalpindi? Best Spa offers certified Swedish, Thai, Deep Tissue & Full Body Massage in Bahria Town Phase 7. Call +92 306 5656413.",
+    "Best massage center in Rawalpindi: certified Swedish, Thai, deep tissue & full body massage in Bahria Town Phase 7. Open late – call 0306 5656413.",
   alternates: {
     canonical: "/massage-center-rawalpindi",
   },
-};
+});
 
 const faqs = [
   {

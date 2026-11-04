@@ -8,14 +8,15 @@ import { CTASection } from "@/components/shared/CTASection";
 import { Phone, Calendar, Sparkles, ShieldCheck, Check, Flower2, Clock, MapPin } from "lucide-react";
 import { cn } from "@/lib/utils";
 
-export const metadata: Metadata = {
-  title: "Luxury Spa in Bahria Town Rawalpindi – Private Suites & Couples Spa",
+import { withSeo } from "@/lib/seo";
+export const metadata: Metadata = withSeo({
+  title: "Luxury Spa in Bahria Town",
   description:
-    "Experience the premier luxury spa in Bahria Town Rawalpindi. Located in Phase 7 near Nando's. Certified therapists, private suites, and organic spa treatments. Call +92 306 5656413.",
+    "Luxury spa in Bahria Town Rawalpindi near Nando's, Phase 7 – private suites, couples spa, organic treatments and certified therapists.",
   alternates: {
     canonical: "/spa-bahria-town",
   },
-};
+});
 
 const faqs = [
   {

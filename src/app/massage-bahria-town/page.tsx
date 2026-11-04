@@ -8,14 +8,15 @@ import { CTASection } from "@/components/shared/CTASection";
 import { Phone, Calendar, ShieldCheck, Check, Sparkles, MapPin } from "lucide-react";
 import { cn } from "@/lib/utils";
 
-export const metadata: Metadata = {
-  title: "Massage in Bahria Town Rawalpindi – Male & Female Therapists",
+import { withSeo } from "@/lib/seo";
+export const metadata: Metadata = withSeo({
+  title: "Massage in Bahria Town Rawalpindi",
   description:
-    "Looking for a professional massage in Bahria Town Rawalpindi? Certified therapists for Deep Tissue, Thai, Swedish, and Full Body Massage in Phase 7. Call +92 306 5656413.",
+    "Professional massage in Bahria Town Rawalpindi with male & female therapists – deep tissue, Thai, Swedish and full body massage. Call 0306 5656413.",
   alternates: {
     canonical: "/massage-bahria-town",
   },
-};
+});
 
 const faqs = [
   {

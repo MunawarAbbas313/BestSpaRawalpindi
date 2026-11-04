@@ -8,14 +8,15 @@ import { CTASection } from "@/components/shared/CTASection";
 import { ShieldCheck, Award, Heart, Sparkles, CheckCircle2, Phone, Calendar, Lock } from "lucide-react";
 import { cn } from "@/lib/utils";
 
-export const metadata: Metadata = {
-  title: "Why Choose Us – Safe, Hygienic Spa with Certified Therapists",
+import { withSeo } from "@/lib/seo";
+export const metadata: Metadata = withSeo({
+  title: "Why Choose Us – Safe & Hygienic",
   description:
-    "Discover why Best Spa is Rawalpindi's #1 trusted massage and wellness destination. 100% certified therapists, hospital-grade sanitation, private luxury suites. Call +92 306 5656413.",
+    "Why clients trust Best Spa Rawalpindi: 100% certified therapists, hospital-grade sanitation and private luxury suites in Bahria Town Phase 7.",
   alternates: {
     canonical: "/why-choose-us",
   },
-};
+});
 
 const pillars = [
   {
