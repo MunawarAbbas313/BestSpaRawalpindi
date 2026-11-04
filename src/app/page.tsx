@@ -13,14 +13,16 @@ import { WhySpaNeeded } from "@/components/home/WhySpaNeeded";
 import { SEOKeywords } from "@/components/shared/SEOKeywords";
 import { CTASection } from "@/components/shared/CTASection";
 
-export const metadata: Metadata = {
-  title: { absolute: "Best Spa Rawalpindi | Spa & Massage Center in Bahria Town Phase 7 – 0306 5656413" },
+import { withSeo } from "@/lib/seo";
+import { Branches } from "@/components/shared/Branches";
+export const metadata: Metadata = withSeo({
+  title: { absolute: "Best Spa Rawalpindi | Massage Center Bahria Town" },
   description:
-    "Best Spa Rawalpindi – luxury spa & massage center in Bahria Town Phase 7, near DHA Islamabad. Full body, Swedish, Thai, deep tissue & couples massage. Open daily 1 PM – 4 AM. Call/WhatsApp 0306 5656413.",
+    "Spa & massage center in Bahria Town Phase 7, Rawalpindi. Full body, Swedish, Thai, deep tissue & couples massage. Open 1 PM – 4 AM. Call 0306 5656413.",
   alternates: {
     canonical: "/",
   },
-};
+});
 
 const homeFaqs = [
   {
@@ -273,6 +275,7 @@ export default function Home() {
       <MapSection />
 
       {/* Regional Wellness Hub (Internal Links) */}
+      <Branches />
       <SEOKeywords />
     </div>
   );

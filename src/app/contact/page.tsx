@@ -6,15 +6,16 @@ import { FAQSection } from "@/components/ui/accordion";
 import { SEOKeywords } from "@/components/shared/SEOKeywords";
 import { cn } from "@/lib/utils";
 
-export const metadata: Metadata = {
-  title: "Contact Number & Booking – Spa in Bahria Town Phase 7 (0306 5656413)",
+import { withSeo } from "@/lib/seo";
+export const metadata: Metadata = withSeo({
+  title: "Contact & Booking – 0306 5656413",
   description:
-    "Best Spa Rawalpindi contact number: 0306 5656413 (call or WhatsApp). Book a massage in Bahria Town Phase 7 near Nando's – address, timings, email and directions. Same-day booking available.",
+    "Best Spa Rawalpindi contact number: 0306 5656413 (call or WhatsApp). Book a massage in Bahria Town Phase 7 near Nando's – address, timings and map.",
   keywords: ["spa contact number Rawalpindi", "massage center phone number", "Best Spa Rawalpindi WhatsApp number", "spa booking Bahria Town", "book massage appointment Rawalpindi", "spa address Bahria Town Phase 7", "spa timings Rawalpindi"],
   alternates: {
  canonical: "/contact",
  },
-};
+});
 
 const contactFaqs = [
   {

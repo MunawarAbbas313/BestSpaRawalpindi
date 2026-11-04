@@ -6,14 +6,15 @@ import { CTASection } from "@/components/shared/CTASection";
 import { ArrowRight, Calendar, Tag, Clock, BookOpen, Sparkles } from "lucide-react";
 import { blogPosts } from "@/lib/blog-data";
 
-export const metadata: Metadata = {
-  title: "Massage & Spa Blog – Wellness Guides and Tips from Rawalpindi",
+import { withSeo } from "@/lib/seo";
+export const metadata: Metadata = withSeo({
+  title: "Massage & Spa Blog – Wellness Tips",
   description:
-    "Expert wellness articles on massage therapy benefits, Swedish vs Deep Tissue, stress relief, and self-care in Bahria Town Rawalpindi.",
+    "Massage guides and wellness tips from Best Spa Rawalpindi: benefits, prices, etiquette and choosing the right therapy in the twin cities.",
   alternates: {
     canonical: "/blog",
   },
-};
+});
 
 export default function BlogPage() {
   const featuredPost = blogPosts[0];

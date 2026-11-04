@@ -8,14 +8,15 @@ import { CTASection } from "@/components/shared/CTASection";
 import { Phone, Calendar, ShieldCheck, Check, Sparkles, Activity } from "lucide-react";
 import { cn } from "@/lib/utils";
 
-export const metadata: Metadata = {
-  title: "Body Massage in Rawalpindi – Therapeutic Massage for Pain & Stress",
+import { withSeo } from "@/lib/seo";
+export const metadata: Metadata = withSeo({
+  title: "Body Massage in Rawalpindi",
   description:
-    "Professional body massage therapies in Bahria Town Phase 7, Rawalpindi. Relieve muscle soreness, improve circulation, and de-stress with certified therapists. Call +92 306 5656413.",
+    "Therapeutic body massage in Bahria Town Phase 7, Rawalpindi for muscle soreness, circulation and stress, by certified therapists. Call 0306 5656413.",
   alternates: {
     canonical: "/body-massage",
   },
-};
+});
 
 const faqs = [
   {

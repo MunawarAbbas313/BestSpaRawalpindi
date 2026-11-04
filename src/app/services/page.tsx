@@ -9,14 +9,15 @@ import { CTASection } from "@/components/shared/CTASection";
 import { Clock, Tag, ArrowRight, ShieldCheck, Phone, MessageCircle } from "lucide-react";
 import { cn } from "@/lib/utils";
 
-export const metadata: Metadata = {
-  title: "Massage Services & Spa Menu in Rawalpindi – Prices from PKR 3,500",
+import { withSeo } from "@/lib/seo";
+export const metadata: Metadata = withSeo({
+  title: "Massage Services & Spa Menu",
   description:
-    "Explore full massage therapies and spa menu in Bahria Town Phase 7, Rawalpindi. Full body, Swedish, Thai, Deep Tissue, Hot Stone, and Couples packages. Call +92 306 5656413.",
+    "Full spa menu in Bahria Town Phase 7, Rawalpindi: full body, Swedish, Thai, deep tissue, hot stone and couples massage – prices from PKR 3,500.",
   alternates: {
     canonical: "/services",
   },
-};
+});
 
 const services = [
   {

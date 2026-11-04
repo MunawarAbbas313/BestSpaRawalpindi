@@ -8,23 +8,18 @@ import { CTASection } from "@/components/shared/CTASection";
 import { SEOKeywords } from "@/components/shared/SEOKeywords";
 import { cn } from "@/lib/utils";
 import { SITE } from "@/lib/site-config";
+import { withSeo, landingSeo, clampDescription } from "@/lib/seo";
 import type { LandingPageData } from "@/lib/landing-pages";
 
 export function buildLandingMetadata(page: LandingPageData): Metadata {
-  return {
-    title: page.metaTitle,
-    description: page.metaDescription,
+  // Short title/description overrides keep <title> < 60 and description <= 155 chars.
+  const seo = landingSeo[page.slug];
+  return withSeo({
+    title: seo?.title ?? page.metaTitle,
+    description: seo?.description ?? clampDescription(page.metaDescription),
     keywords: page.keywords,
     alternates: { canonical: `/${page.slug}` },
-    openGraph: {
-      type: "website",
-      locale: "en_PK",
-      url: `${SITE.url}/${page.slug}`,
-      title: `${page.metaTitle} | ${SITE.name}`,
-      description: page.metaDescription,
-      siteName: SITE.name,
-    },
-  };
+  });
 }
 
 export function ServiceLandingPage({ page }: { page: LandingPageData }) {

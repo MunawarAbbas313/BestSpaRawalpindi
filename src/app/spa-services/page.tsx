@@ -8,14 +8,15 @@ import { CTASection } from "@/components/shared/CTASection";
 import { Phone, Calendar, ShieldCheck, Check, Sparkles, Tag, ArrowRight } from "lucide-react";
 import { cn } from "@/lib/utils";
 
-export const metadata: Metadata = {
-  title: "Spa Services in Rawalpindi & Bahria Town – Wellness Packages",
+import { withSeo } from "@/lib/seo";
+export const metadata: Metadata = withSeo({
+  title: "Spa Services & Packages",
   description:
-    "Explore luxury spa services in Bahria Town Phase 7, Rawalpindi. Full body massages, facial wellness, reflexology, and couple retreat packages. Call +92 306 5656413.",
+    "Spa services in Bahria Town Phase 7, Rawalpindi: full body massage, facial wellness, reflexology and couples packages. Call +92 306 5656413.",
   alternates: {
     canonical: "/spa-services",
   },
-};
+});
 
 const spaPackages = [
   {

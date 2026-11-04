@@ -8,14 +8,15 @@ import { CTASection } from "@/components/shared/CTASection";
 import { ShieldCheck, Sparkles, Heart, Award, CheckCircle2, Phone, Calendar } from "lucide-react";
 import { cn } from "@/lib/utils";
 
-export const metadata: Metadata = {
-  title: "About Us – Certified Massage Therapists in Bahria Town Rawalpindi",
+import { withSeo } from "@/lib/seo";
+export const metadata: Metadata = withSeo({
+  title: "About Our Certified Therapists",
   description:
-    "Discover Best Spa Rawalpindi in Bahria Town Phase 7. Certified massage therapists, hospital-grade sanitation, private luxury suites, and organic therapies.",
+    "Meet the certified therapists of Best Spa Rawalpindi in Bahria Town Phase 7 – our story, hygiene standards and late-night wellness care.",
   alternates: {
     canonical: "/about",
   },
-};
+});
 
 const aboutFaqs = [
   {

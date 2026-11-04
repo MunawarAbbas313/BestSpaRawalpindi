@@ -8,14 +8,15 @@ import { CTASection } from "@/components/shared/CTASection";
 import { Phone, Calendar, ShieldCheck, Check, MapPin, Clock, Award, Navigation } from "lucide-react";
 import { cn } from "@/lib/utils";
 
-export const metadata: Metadata = {
-  title: "Massage Center in Bahria Town Phase 7 Rawalpindi (Near Nando's)",
+import { withSeo } from "@/lib/seo";
+export const metadata: Metadata = withSeo({
+  title: "Massage Center Bahria Town Phase 7",
   description:
-    "Looking for a massage center in Bahria Town Phase 7, Rawalpindi? Best Spa is located near Nando's. Certified therapists, private suites, Swedish, Thai & Deep Tissue. Call +92 306 5656413.",
+    "Massage center in Bahria Town Phase 7 near Nando's. Certified therapists, private suites, Swedish, Thai & deep tissue massage. Call +92 306 5656413.",
   alternates: {
     canonical: "/massage-center-bahria-town-phase-7",
   },
-};
+});
 
 const faqs = [
   {

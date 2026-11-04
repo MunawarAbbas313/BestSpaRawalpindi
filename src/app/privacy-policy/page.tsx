@@ -1,8 +1,10 @@
-export const metadata = {
+import type { Metadata } from "next";
+import { withSeo } from "@/lib/seo";
+export const metadata: Metadata = withSeo({
   title: "Privacy Policy",
-  description: "Privacy policy for Best Spa Rawalpindi, Bahria Town Phase 7 – how we handle booking and contact information.",
+  description: "How Best Spa Rawalpindi collects, uses and protects your personal information when you visit our website or book a massage appointment.",
   alternates: { canonical: "/privacy-policy" },
-};
+});
 
 export default function PrivacyPolicy() {
     return (
